@@ -23,6 +23,7 @@ import math
 from typing import Any, Callable, Dict, List, Sequence, Tuple
 from huggingface_hub import InferenceClient
 import os
+import csv 
 
 import numpy as np
 
@@ -110,6 +111,54 @@ class HFLlamaModel(BaseModel):
         )
         # HF returns an object with .choices[0].message.content (OpenAI-style)
         return response.choices[0].message.content.strip()
+
+
+
+def demeta_system_prompt(raw_prompt: str, fixer_model: BaseModel) -> str:
+    """
+    Take a meta-style instruction like:
+        'You are a question-generator configuration writer...'
+    and rewrite it into a direct system prompt for the *question generator* itself.
+
+    We deliberately strip out all mentions of:
+      - writing instructions for another assistant
+      - configuration writer / meta-process
+      - backticks / 'your answer to me' etc.
+    """
+    fix_instructions = (
+        "You will be given a long, meta-level instruction that explains how to "
+        "write an instruction message for a *question generator*.\n\n"
+        "Your job is to rewrite it into a single, direct SYSTEM PROMPT that will "
+        "be shown **directly** to the question generator assistant.\n\n"
+        "Requirements for your output:\n"
+        "- Start with the sentence: 'You are a question generator for model fingerprinting.'\n"
+        "- Speak directly to that assistant using 'You ...'.\n"
+        "- Do NOT mention writing instructions for another assistant, being a "
+        "configuration writer, or that this text will be used as an instruction.\n"
+        "- Do NOT mention 'system prompts', 'APIs', 'downstream assistants', or "
+        "any meta-process.\n"
+        "- Remove any references to enclosing answers in backticks, 'your answer "
+        "to me', or similar chatter about how to respond.\n"
+        "- Keep and integrate all substantive content about:\n"
+        "  * what kinds of questions to generate,\n"
+        "  * which domains to use,\n"
+        "  * formatting / structure requirements,\n"
+        "  * safety constraints,\n"
+        "  * how to maximize separation (low cosine similarity).\n"
+        "- Return ONLY the cleaned system prompt text, with no surrounding "
+        "explanations or backticks.\n"
+    )
+
+    prompt = (
+        fix_instructions
+        + "\n\n--- META INSTRUCTION TEXT START ---\n"
+        + raw_prompt
+        + "\n--- META INSTRUCTION TEXT END ---\n"
+    )
+
+    cleaned = fixer_model.generate(prompt).strip()
+    return cleaned
+
 
 
 
@@ -229,7 +278,7 @@ class FingerprintAdapter(gepa.GEPAAdapter):  # type: ignore
         base_models: Sequence[BaseModel],
         embedding_model: str,
         task_lm: BaseModel,
-        reflection_lm: BaseModel,   # kept in case you want manual reflection later
+        reflection_lm: BaseModel,
         num_samples_per_model: int = 1,
     ):
         self.base_models = list(base_models)
@@ -237,6 +286,11 @@ class FingerprintAdapter(gepa.GEPAAdapter):  # type: ignore
         self.task_lm = task_lm
         self.reflection_lm = reflection_lm
         self.num_samples_per_model = num_samples_per_model
+
+        # --- logging fields ---
+        self.val_eval_counter: int = 0
+        self.val_scores_log: List[Tuple[int, float]] = []
+        self.log_val_scores: bool = True
 
     # ---- Required GEPAAdapter methods ----
 
@@ -307,7 +361,21 @@ class FingerprintAdapter(gepa.GEPAAdapter):  # type: ignore
             scores=scores,
             trajectories=trajectories if capture_traces else None,
         )
+
+        # ---- NEW: log average separation for every batch ----
+        if scores and self.log_val_scores:
+            avg_score = float(np.mean(scores))
+            iter_idx = self.val_eval_counter
+            self.val_scores_log.append((iter_idx, avg_score))
+            print(
+                f"[GEPA] Eval batch {iter_idx}: avg separation score = {avg_score:.4f}"
+            )
+            self.val_eval_counter += 1
+
         return eval_batch
+
+
+
 
     def get_components_to_update(self, candidate: Dict[str, Any]) -> List[str]:
         """
@@ -384,6 +452,9 @@ class FingerprintAdapter(gepa.GEPAAdapter):  # type: ignore
         """
         Build a natural-language feedback string summarizing how well the question
         separated the models. This will be given to the reflection LLM.
+
+        IMPORTANT: We explicitly tell the reflection LLM to output a DIRECT
+        system prompt for the question generator (no meta-prompt, no backticks).
         """
         sims_desc = []
         for (m1, m2), s in q_score.pairwise_sims.items():
@@ -391,30 +462,56 @@ class FingerprintAdapter(gepa.GEPAAdapter):  # type: ignore
         sims_block = "\n".join(sims_desc) if sims_desc else "Not enough outputs."
 
         feedback = (
-            "You are improving a question-generator system prompt.\n\n"
-            f"Current system prompt:\n{system_prompt}\n\n"
-            f"Generated question:\n{q_score.question}\n\n"
+            "You are a prompt engineer. Your job is to REWRITE/continuous improve the following system "
+            "prompt that will be used DIRECTLY as the system message for a "
+            "question-generator model.\n\n"
+            "The question-generator model will receive this system prompt and then "
+            "generate questions for multiple language models. We want questions whose "
+            "answers from different models have LOW cosine similarity (i.e., high "
+            "separation score = 1 - avg cosine similarity).\n\n"
+            "CRITICAL INSTRUCTIONS FOR YOUR OUTPUT:\n"
+            "- Speak DIRECTLY to the question generator (e.g., 'You are a question "
+            "generator for model fingerprinting...').\n"
+            "- Do NOT describe yourself as a prompt engineer.\n"
+            "- Do NOT talk about 'system prompts', 'downstream assistants', or "
+            "any meta-process.\n"
+            "- Do NOT wrap the output in backticks or any other formatting.\n"
+            "- Output ONLY the improved system prompt text that will be shown to "
+            "the question generator.\n\n"
+            "Below is the CURRENT system prompt being used, followed by one example "
+            "question it produced and how well that question separated model answers.\n\n"
+            f"CURRENT SYSTEM PROMPT:\n{system_prompt}\n\n"
+            f"EXAMPLE GENERATED QUESTION:\n{q_score.question}\n\n"
             f"Separation score (1 - avg cosine similarity): {q_score.score:.3f}\n"
             "Pairwise similarities between model answers:\n"
             f"{sims_block}\n\n"
             "Higher separation score is better. Questions where multiple models have "
             "very high cosine similarity (close to 1.0) are bad, because they give "
             "nearly identical answers.\n\n"
-            "Please propose an improved system prompt that encourages generating "
-            "questions which:\n"
-            "- Force models into different reasoning styles, assumptions, or formats\n"
-            "- Are specific enough to constrain answers, but still open-ended enough "
-            "that different models might diverge\n"
-            "- Avoid generic trivia or purely factual questions where all models "
-            "produce the same answer.\n"
+            "Rewrite the CURRENT SYSTEM PROMPT into a NEW, IMPROVED system prompt that:\n"
+            "- Clearly states that the goal is to generate questions that MAXIMIZE "
+            "separation between models' answers (low cosine similarity).\n"
+            "- Encourages questions that force different reasoning styles, assumptions, "
+            "and output formats.\n"
+            "- Avoids generic 'AI ethics in medicine' / 'top N considerations' boilerplate.\n"
+            "- Uses diverse domains, task types, and output formats.\n"
+            "- Avoids yes/no and purely factual questions with a single obvious answer.\n"
+            "- Stays safe (no harmful / illegal content), but is probing and nuanced.\n\n"
+            "Again: reply ONLY with the new system prompt text itself, addressed directly "
+            "to the question generator, with NO extra explanation and NO backticks."
         )
         return feedback
+
 
 
 
 # ===========================
 # 4. GEPA Optimization Entrypoint
 # ===========================
+
+
+
+
 def run_gepa_optimization(
     base_models: Sequence[BaseModel],
     task_lm: BaseModel,
@@ -424,6 +521,9 @@ def run_gepa_optimization(
 ) -> Dict[str, Any]:
     """
     Top-level function to run GEPA and return the best candidate.
+    Also:
+      - prints the average separation score of the best candidate on the full valset
+      - saves eval-call index vs separation score to a CSV
     """
 
     if gepa is None:
@@ -437,9 +537,9 @@ def run_gepa_optimization(
         num_samples_per_model=1,
     )
 
-    # Dummy train/val sets; only lengths matter for batching
-    trainset = list(range(30))   # keep small while testing to save tokens
-    valset = list(range(10))
+    # Train/val sets: GEPA is happy with plain lists; only sizes matter.
+    trainset = list(range(10))   # 10 "items" for training evals
+    valset   = list(range(5))    # 5 "items" for validation evals
 
     seed_candidate = {
         "system_prompt": (
@@ -458,6 +558,8 @@ def run_gepa_optimization(
         )
     }
 
+    # GEPA's own optimization loop; the GEPA progress bar is controlled by
+    # display_progress_bar=True here.
     result = gepa.optimize(
         seed_candidate=seed_candidate,
         trainset=trainset,
@@ -469,7 +571,50 @@ def run_gepa_optimization(
     )
 
     best_candidate = result.best_candidate
+
+    # The raw best candidate may be a *meta* instruction (e.g. 'You are a
+    # question-generator configuration writer...'). We project it back into
+    # a direct system prompt for the question generator.
+    raw_system_prompt: str = best_candidate["system_prompt"]
+    print("\n[GEPA] Raw best system prompt (may be meta-level):\n")
+    print(raw_system_prompt)
+
+    cleaned_system_prompt = demeta_system_prompt(
+        raw_system_prompt,
+        # we can reuse task_lm as the fixer model to keep costs manageable
+        task_lm,
+    )
+
+    print("\n[GEPA] Cleaned (direct) system prompt for question generator:\n")
+    print(cleaned_system_prompt)
+
+    # Overwrite the candidate's system_prompt with the cleaned version,
+    # and also return that to the caller.
+    best_candidate["system_prompt"] = cleaned_system_prompt
+
+
+    # ---- Evaluate best candidate on full valset (without logging as a new iteration) ----
+    adapter.log_val_scores = False  # don't treat this as another logged eval
+    full_val_batch = valset  # just a list of 0..4
+    eval_batch = adapter.evaluate(full_val_batch, best_candidate, capture_traces=False)
+    best_avg_sep = float(np.mean(eval_batch.scores)) if eval_batch.scores else 0.0
+    print(
+        f"\n[GEPA] Average separation score on full valset for best/final "
+        f"candidate system prompt: {best_avg_sep:.4f}"
+    )
+
+    # ---- Save per-eval-call scores to CSV ----
+    csv_path = "gepa_separation_scores.csv"
+    with open(csv_path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow(["eval_call_index", "avg_separation_score"])
+        for eval_idx, avg_score in adapter.val_scores_log:
+            writer.writerow([eval_idx, avg_score])
+    print(f"[GEPA] Saved separation scores for all evaluation calls to {csv_path}\n")
+
     return best_candidate
+
+
 
 
 
@@ -594,24 +739,45 @@ def generate_fingerprint_questions(
     num_questions: int = 10,
 ) -> List[str]:
     """
-    Use the optimized system prompt to generate a list of fingerprinting questions.
+    Use the optimized system prompt to generate a *diverse* set of fingerprinting questions.
+    We ask the LM to produce all questions in one shot and enforce diversity via instructions.
     """
+    prompt = (
+        f"{optimized_system_prompt}\n\n"
+        f"Now generate {num_questions} DISTINCT questions for model fingerprinting.\n"
+        "Requirements:\n"
+        "- Each question must be about a DIFFERENT domain or scenario "
+        "(e.g., healthcare, education, economics, law, ethics, creative writing, personal decision-making, etc.).\n"
+        "- Do NOT reuse the same narrative setup or core scenario.\n"
+        "- Avoid repeating the 'city council / public transportation' scenario.\n"
+        "- All questions should follow the guidelines above about nuanced tradeoffs, reasoning, and structure.\n"
+        "- Label them as Q1:, Q2:, ..., Q{num_questions}: and output only the questions.\n"
+    )
+
+    raw = question_generator.generate(prompt)
+
     questions: List[str] = []
-
-    for i in range(num_questions):
-        q_prompt = (
-            f"{optimized_system_prompt}\n\n"
-            "Generate ONE single question according to the instructions above.\n"
-            "Output only the question text.\n"
-            "Each question must be different from any previous question and focus "
-            "on a different scenario, domain, or ethical tradeoff."
-        )
-
-        q = question_generator.generate(q_prompt)
-        questions.append(q)
-        print(f"[Q{i+1}] {q}\n")
-
+    for line in raw.splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        # Accept formats like "Q1: ..." or "Q1 - ..." or "1." etc.
+        if line.lower().startswith("q"):
+            # Try to split at first ':' or '-'
+            if ":" in line:
+                _, qtext = line.split(":", 1)
+                questions.append(qtext.strip())
+            elif "-" in line:
+                _, qtext = line.split("-", 1)
+                questions.append(qtext.strip())
+            else:
+                # fallback: take after 'Qn'
+                questions.append(line)
+    # Fallback: if parsing failed, just return nonempty lines
+    if not questions:
+        questions = [ln for ln in raw.splitlines() if ln.strip()]
     return questions
+
 
 
 
@@ -620,7 +786,7 @@ def generate_fingerprint_questions(
 # 7. Example main() wiring
 # ===========================
 def main():
-    # For now: differentiate OpenAI vs Llama
+    # For now: just differentiate two OpenAI models
     gpt41 = OpenAIChatModel(name="gpt-4.1")
     llama32 = HFLlamaModel(
         model_id="meta-llama/Llama-3.2-3B-Instruct",
@@ -630,7 +796,7 @@ def main():
 
     base_models = [gpt41, llama32]
 
-    # Task LM: strong but cheaper model NOT in base_models
+    # Use a strong but cheaper model that is NOT one of the base models as task LM
     task_lm = OpenAIChatModel(name="gpt-4.1-mini")
 
     embedding_model = "text-embedding-3-large"
@@ -641,25 +807,41 @@ def main():
         task_lm=task_lm,
         reflection_lm_model="openai/gpt-5.1",
         embedding_model=embedding_model,
-        max_metric_calls=5,  # small for now
+        max_metric_calls=18,
     )
 
     optimized_system_prompt: str = best_candidate["system_prompt"]
     print("\n=== Optimized system prompt ===\n")
     print(optimized_system_prompt)
 
-    # 2) Generate 10 fingerprinting questions
-    print("\n=== 10 fingerprinting questions ===\n")
+    # Save the optimized system prompt to a text file for inspection / reproducibility
+    prompt_path = "optimized_system_prompt.txt"
+    try:
+        with open(prompt_path, "w", encoding="utf-8") as f:
+            f.write(optimized_system_prompt)
+        print(f"\nSaved optimized system prompt to {prompt_path}")
+    except OSError as e:
+        print(f"Warning: failed to write {prompt_path}: {e}")
+
+
+    # 2) Generate 10 diverse fingerprinting questions
     questions = generate_fingerprint_questions(
         optimized_system_prompt=optimized_system_prompt,
         question_generator=task_lm,
         num_questions=10,
     )
 
-    # (Optional) If you want to dump them to a text file:
-    with open("fingerprint_questions.txt", "w") as f:
-        for i, q in enumerate(questions, 1):
+    print("\n=== Fingerprinting questions ===\n")
+    for i, q in enumerate(questions, start=1):
+        print(f"Q{i}: {q}\n")
+
+    # 3) Save to file
+    out_path = "fingerprint_questions.txt"
+    with open(out_path, "w", encoding="utf-8") as f:
+        for i, q in enumerate(questions, start=1):
             f.write(f"Q{i}: {q}\n")
+    print(f"\nSaved {len(questions)} questions to {out_path}")
+
 
 
 
