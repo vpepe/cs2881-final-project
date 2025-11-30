@@ -71,10 +71,17 @@ class BaseModel:
 
 
 class OpenAIChatModel(BaseModel):
-    def generate(self, prompt: str) -> str:
+    def generate(self, prompt: str, system_prompt: str | None = None) -> str:
+        if system_prompt is not None:
+            messages = [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": prompt},
+            ]
+        else:
+            messages = [{"role": "user", "content": prompt}]
         response = openai_client.chat.completions.create(
             model=self.name,  # e.g. "gpt-4.1" or "gpt-4.1-mini"
-            messages=[{"role": "user", "content": prompt}],
+            messages=messages,
             temperature=self.temperature,
             max_tokens=self.max_tokens,
         )
@@ -101,11 +108,18 @@ class HFLlamaModel(BaseModel):
         # You can keep model= here or pass it in chat_completion; both work.
         self.client = InferenceClient(token=hf_token)
 
-    def generate(self, prompt: str) -> str:
+    def generate(self, prompt: str, system_prompt: str | None = None) -> str:
         # Use chat_completion for "conversational" / instruct models
+        if system_prompt is not None:
+            messages = [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": prompt},
+            ]
+        else:
+            messages = [{"role": "user", "content": prompt}]
         response = self.client.chat_completion(
             model=self.name,   # e.g. "meta-llama/Llama-3.2-3B-Instruct"
-            messages=[{"role": "user", "content": prompt}],
+            messages=messages,
             max_tokens=self.max_tokens,
             temperature=self.temperature,
         )
