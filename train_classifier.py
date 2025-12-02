@@ -5,6 +5,7 @@ based on response embeddings from evolved questions.
 Usage:
     python train_classifier.py --questions best_questions_batch.json
     python train_classifier.py --questions best_questions_batch.json --test "Your test question here"
+    python train_classifier.py --questions train_questions.json --test-file test_questions.json
 """
 
 import os
@@ -133,7 +134,8 @@ class LinearProbe(nn.Module):
 
 
 def train_linear_probe(X: np.ndarray, y: np.ndarray, hidden_dim: int = 128,
-                       test_size: float = 0.2, epochs: int = 50) -> Tuple[LinearProbe, Dict]:
+                       test_size: float = 0.2, epochs: int = 50, 
+                       X_test_custom: np.ndarray = None, y_test_custom: np.ndarray = None) -> Tuple[LinearProbe, Dict]:
     """
     Train a linear probe (one-layer NN) on the embeddings.
 
@@ -141,8 +143,10 @@ def train_linear_probe(X: np.ndarray, y: np.ndarray, hidden_dim: int = 128,
         X: Feature matrix
         y: Labels
         hidden_dim: Hidden layer dimension
-        test_size: Fraction of data for testing
+        test_size: Fraction of data for testing (ignored if X_test_custom is provided)
         epochs: Number of training epochs
+        X_test_custom: Optional custom test set features
+        y_test_custom: Optional custom test set labels
 
     Returns:
         classifier: Trained LinearProbe model
@@ -154,11 +158,19 @@ def train_linear_probe(X: np.ndarray, y: np.ndarray, hidden_dim: int = 128,
     print("=" * 80)
 
     # Split data
-    X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=test_size, random_state=42, stratify=y
-    )
+    if X_test_custom is not None and y_test_custom is not None:
+        # Use custom test set, train on all provided data
+        X_train, y_train = X, y
+        X_test, y_test = X_test_custom, y_test_custom
+        print("\nUsing custom test set")
+    else:
+        # Use standard train-test split
+        X_train, X_test, y_train, y_test = train_test_split(
+            X, y, test_size=test_size, random_state=42, stratify=y
+        )
+        print("\nUsing random train-test split")
 
-    print(f"\nTrain set: {len(X_train)} samples")
+    print(f"Train set: {len(X_train)} samples")
     print(f"Test set: {len(X_test)} samples")
 
 
@@ -319,6 +331,7 @@ def main():
     parser = argparse.ArgumentParser(description="Train classifier to distinguish GPT-4.1 vs Llama 3.2 3B")
     parser.add_argument("--questions", type=str, required=True, help="Path to JSON file with evolved questions")
     parser.add_argument("--test", type=str, help="Test question for inference")
+    parser.add_argument("--test-file", type=str, help="Path to JSON file with test questions (for deterministic test set)")
     parser.add_argument("--save", type=str, default="classifier.pth", help="Path to save trained classifier")
     parser.add_argument("--load", type=str, help="Path to load pre-trained classifier (skips training)")
     parser.add_argument("--hidden-dim", type=int, default=128, help="Hidden layer dimension for linear probe")
@@ -343,6 +356,24 @@ def main():
 
     print(f"Loaded {len(questions)} questions")
 
+    # Load test questions if provided
+    X_test_custom = None
+    y_test_custom = None
+    if args.test_file:
+        print(f"\nLoading test questions from {args.test_file}...")
+        with open(args.test_file, "r") as f:
+            test_data = json.load(f)
+        
+        # Extract test questions
+        if isinstance(test_data, list):
+            test_questions = test_data
+        else:
+            raise ValueError(f"Test file must contain a list of questions")
+        
+        print(f"Loaded {len(test_questions)} test questions")
+        print("Collecting test data...")
+        X_test_custom, y_test_custom = collect_training_data(test_questions)
+
     # Train or load classifier
     if args.load:
         print(f"\nLoading pre-trained classifier from {args.load}...")
@@ -360,8 +391,14 @@ def main():
         # Collect training data
         X, y = collect_training_data(questions)
 
-        # Train classifier
-        classifier, metrics = train_linear_probe(X, y, hidden_dim=args.hidden_dim, epochs=args.epochs)
+        # Train classifier with custom test set if provided
+        classifier, metrics = train_linear_probe(
+            X, y, 
+            hidden_dim=args.hidden_dim, 
+            epochs=args.epochs,
+            X_test_custom=X_test_custom,
+            y_test_custom=y_test_custom
+        )
 
         # Save classifier
         print(f"\nSaving classifier to {args.save}...")
@@ -369,7 +406,7 @@ def main():
         print("Classifier saved!")
 
         # Save metrics
-        metrics_file = args.save.replace(".pth", "_metrics.json")
+        metrics_file = "classifier_metrics.json"
         metrics_to_save = {
             "train_accuracy": metrics["train_accuracy"],
             "test_accuracy": metrics["test_accuracy"],
@@ -390,8 +427,8 @@ def main():
         with open(inference_file, "w") as f:
             json.dump(results, f, indent=2)
         print(f"\nInference results saved to {inference_file}")
-    else:
-        # Interactive inference mode
+    elif args.load and not args.test_file:
+        # Interactive inference mode (only if loading a model and not batch testing)
         print("\n" + "=" * 80)
         print("INTERACTIVE INFERENCE MODE")
         print("=" * 80)
