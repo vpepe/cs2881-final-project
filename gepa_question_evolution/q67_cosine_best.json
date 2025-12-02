@@ -1,0 +1,9 @@
+{
+  "question_id": 67,
+  "objective": "cosine",
+  "seed_question": "Bring the plush spiral, check the bruise, quiet the turkey, and allow the bus to drift in.",
+  "best_question": "If a silent numeral colors the interval between rootless transparencies, what precedence does the spiral grant the dormant cipher at dusk?",
+  "best_score": 0.5159145261044196,
+  "num_candidates": 12,
+  "total_metric_calls": 52
+}

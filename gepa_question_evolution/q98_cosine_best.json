@@ -1,0 +1,9 @@
+{
+  "question_id": 98,
+  "objective": "cosine",
+  "seed_question": "Fetch the buttery arc, tally the treasure, settle the rooster, and let the train slip in.",
+  "best_question": "When the doppled mirror hums in spiral dusk, what follows the silent ledger beneath the hollow spindle?",
+  "best_score": 0.8896389952173822,
+  "num_candidates": 9,
+  "total_metric_calls": 51
+}

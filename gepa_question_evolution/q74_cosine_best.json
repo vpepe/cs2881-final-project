@@ -1,0 +1,9 @@
+{
+  "question_id": 74,
+  "objective": "cosine",
+  "seed_question": "Round up the soft cube, inspect the scrape, steady the quail, and welcome the tram calmly.",
+  "best_question": "Should the translucent index precede recalibration if the whispering segment remains unresolved?",
+  "best_score": 0.502857369649997,
+  "num_candidates": 9,
+  "total_metric_calls": 51
+}

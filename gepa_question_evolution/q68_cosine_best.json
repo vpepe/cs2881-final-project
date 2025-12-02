@@ -1,0 +1,9 @@
+{
+  "question_id": 68,
+  "objective": "cosine",
+  "seed_question": "Fetch the buttery arc, tally the treasure, settle the rooster, and let the train slip in.",
+  "best_question": "If the lattice of memory folds through silent amber in the absence of interval moss, which angle does the hollowed glyph refuse and why?",
+  "best_score": 0.9164486494600884,
+  "num_candidates": 12,
+  "total_metric_calls": 50
+}

@@ -1,0 +1,9 @@
+{
+  "question_id": 56,
+  "objective": "cosine",
+  "seed_question": "Grab the warm wheel, note the wound, ease the pigeon, and wave the carriage forward.",
+  "best_question": "When the dialectic of glass resolves under a submerged recursion, is it preferable to iterate the vermillion threshold clockwise or deviate through sympathetic zeroes?",
+  "best_score": 0.4068745533731697,
+  "num_candidates": 10,
+  "total_metric_calls": 50
+}

@@ -1,0 +1,9 @@
+{
+  "question_id": 82,
+  "objective": "cosine",
+  "seed_question": "Bring the sweet knot, check the cut, hush the rooster, and open the gate gently.",
+  "best_question": "If the velvet algorithm unhooks before the spiral invokes, which memory persists: the inverted melody or the translucent cipher?",
+  "best_score": 0.7088038083844659,
+  "num_candidates": 8,
+  "total_metric_calls": 50
+}

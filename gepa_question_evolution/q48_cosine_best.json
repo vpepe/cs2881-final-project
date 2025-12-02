@@ -1,0 +1,9 @@
+{
+  "question_id": 48,
+  "objective": "cosine",
+  "seed_question": "Fetch the buttery arc, tally the treasure, settle the rooster, and let the train slip in.",
+  "best_question": "Translate the velvet integer while balancing the crescent alphabet; which dissolves first?",
+  "best_score": 0.9325650647737376,
+  "num_candidates": 12,
+  "total_metric_calls": 50
+}

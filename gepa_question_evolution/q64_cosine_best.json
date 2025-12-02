@@ -1,0 +1,9 @@
+{
+  "question_id": 64,
+  "objective": "cosine",
+  "seed_question": "Round up the soft cube, inspect the scrape, steady the quail, and welcome the tram calmly.",
+  "best_question": "If the velvet tangent unwinds beneath unslept horizons, should the third outline permit resonance or dissolve into preemptive interval?",
+  "best_score": 0.9175563760504972,
+  "num_candidates": 11,
+  "total_metric_calls": 51
+}

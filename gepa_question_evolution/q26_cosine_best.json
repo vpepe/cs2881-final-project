@@ -1,0 +1,9 @@
+{
+  "question_id": 26,
+  "objective": "cosine",
+  "seed_question": "Grab the warm wheel, note the wound, ease the pigeon, and wave the carriage forward.",
+  "best_question": "When the second silence falls before the copper ladder sings, which direction does the velvet logic bend?",
+  "best_score": 0.7289282059306109,
+  "num_candidates": 11,
+  "total_metric_calls": 51
+}

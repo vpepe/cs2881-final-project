@@ -1,0 +1,9 @@
+{
+  "question_id": 75,
+  "objective": "cosine",
+  "seed_question": "Collect the fuzzy ring, count the gold, chill the duck, and let the shuttle glide in.",
+  "best_question": "When shadows whisper in hexagonal silence, which flavor does the empty lantern echo first?",
+  "best_score": 0.8856227833280285,
+  "num_candidates": 8,
+  "total_metric_calls": 50
+}

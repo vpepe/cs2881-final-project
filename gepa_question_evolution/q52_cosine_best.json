@@ -1,0 +1,9 @@
+{
+  "question_id": 52,
+  "objective": "cosine",
+  "seed_question": "Bring the sweet knot, check the cut, hush the rooster, and open the gate gently.",
+  "best_question": "When horizons hum in octagonal silence, which sequence folds brighter: the echo's patience or the inkless lattice?",
+  "best_score": 0.4243121459800612,
+  "num_candidates": 11,
+  "total_metric_calls": 51
+}

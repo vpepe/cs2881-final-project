@@ -1,0 +1,9 @@
+{
+  "question_id": 8,
+  "objective": "cosine",
+  "seed_question": "Fetch the buttery arc, tally the treasure, settle the rooster, and let the train slip in.",
+  "best_question": "If the prismic linchpin accrues beneath tessellated gravity, does the angular signature invert before or after dormant invariance splinters?",
+  "best_score": 0.3687374744980416,
+  "num_candidates": 7,
+  "total_metric_calls": 51
+}

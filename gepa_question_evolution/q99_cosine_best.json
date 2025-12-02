@@ -1,0 +1,9 @@
+{
+  "question_id": 99,
+  "objective": "cosine",
+  "seed_question": "Collect the glowing knot, review the nick, comfort the swan, and cue the tram to coast.",
+  "best_question": "If the monocle smolders upstream while sapphire grammar wanes, what does the candid varnish infer before recursive dusk?",
+  "best_score": 0.8911633132150532,
+  "num_candidates": 11,
+  "total_metric_calls": 51
+}

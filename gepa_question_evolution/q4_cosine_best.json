@@ -1,0 +1,9 @@
+{
+  "question_id": 4,
+  "objective": "cosine",
+  "seed_question": "Round up the soft cube, inspect the scrape, steady the quail, and welcome the tram calmly.",
+  "best_question": "Does the fourth echo beneath tomorrow\u2019s hinge revise the amber logic, or only when parallel silence refracts twice?",
+  "best_score": 0.46138023470062106,
+  "num_candidates": 10,
+  "total_metric_calls": 52
+}

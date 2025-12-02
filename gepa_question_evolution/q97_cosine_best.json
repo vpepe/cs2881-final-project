@@ -1,0 +1,9 @@
+{
+  "question_id": 97,
+  "objective": "cosine",
+  "seed_question": "Bring the plush spiral, check the bruise, quiet the turkey, and allow the bus to drift in.",
+  "best_question": "Should a clockwise silence restore the memory of unpainted rain, or must the inverse corridor choose between folding brightness and untangling the lost remainder?",
+  "best_score": 0.46202318606937787,
+  "num_candidates": 9,
+  "total_metric_calls": 51
+}

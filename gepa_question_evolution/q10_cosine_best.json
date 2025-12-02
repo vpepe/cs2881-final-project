@@ -1,0 +1,9 @@
+{
+  "question_id": 10,
+  "objective": "cosine",
+  "seed_question": "Grab the bright bun, note the bruise, calm the duck, and let the train roll in quietly.",
+  "best_question": "If a diagonal wind chooses to parcel through the third reversal of an elastic noon, which side of the memory does the hidden axis inhabit?",
+  "best_score": 0.5131809577660826,
+  "num_candidates": 9,
+  "total_metric_calls": 51
+}

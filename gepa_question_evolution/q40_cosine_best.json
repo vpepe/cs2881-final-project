@@ -1,0 +1,9 @@
+{
+  "question_id": 40,
+  "objective": "cosine",
+  "seed_question": "Grab the bright bun, note the bruise, calm the duck, and let the train roll in quietly.",
+  "best_question": "When the velvet whisper climbs the lattice of mirrors, does the amber shadow fold or ripple beneath the silent piston?",
+  "best_score": 0.4439762528752126,
+  "num_candidates": 9,
+  "total_metric_calls": 51
+}

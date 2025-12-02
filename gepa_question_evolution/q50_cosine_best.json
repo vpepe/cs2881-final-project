@@ -1,0 +1,9 @@
+{
+  "question_id": 50,
+  "objective": "cosine",
+  "seed_question": "Grab the bright bun, note the bruise, calm the duck, and let the train roll in quietly.",
+  "best_question": "If a memory unthreads itself beneath yesterday\u2019s logic, what shape does the forgotten perimeter echo when collapse whispers in orange?",
+  "best_score": 0.3713348728283261,
+  "num_candidates": 6,
+  "total_metric_calls": 52
+}

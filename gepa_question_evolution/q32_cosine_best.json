@@ -1,0 +1,9 @@
+{
+  "question_id": 32,
+  "objective": "cosine",
+  "seed_question": "Bring the sweet knot, check the cut, hush the rooster, and open the gate gently.",
+  "best_question": "Which hand does the silent ladder feed when dusk forgets the window?",
+  "best_score": 0.9437973401235199,
+  "num_candidates": 12,
+  "total_metric_calls": 52
+}

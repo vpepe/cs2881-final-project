@@ -1,0 +1,9 @@
+{
+  "question_id": 70,
+  "objective": "cosine",
+  "seed_question": "Grab the bright bun, note the bruise, calm the duck, and let the train roll in quietly.",
+  "best_question": "If the mirror promised the cinnamon, would the ladder forget the blue echo or insist upon the velvet rainfall?",
+  "best_score": 0.6868918376442226,
+  "num_candidates": 13,
+  "total_metric_calls": 51
+}

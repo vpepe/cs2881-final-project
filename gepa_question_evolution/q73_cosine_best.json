@@ -1,0 +1,9 @@
+{
+  "question_id": 73,
+  "objective": "cosine",
+  "seed_question": "Fetch the spicy loop, tally the cash, tame the swan, and guide the ship smoothly.",
+  "best_question": "When a cloud forgets its shadow and the velvet hour narrows, how should one measure the echo\u2019s hunger?",
+  "best_score": 0.5406195796013299,
+  "num_candidates": 5,
+  "total_metric_calls": 51
+}

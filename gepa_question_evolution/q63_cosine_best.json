@@ -1,0 +1,9 @@
+{
+  "question_id": 63,
+  "objective": "cosine",
+  "seed_question": "Fetch the spicy loop, tally the cash, tame the swan, and guide the ship smoothly.",
+  "best_question": "If the amber spiral outpaces the silent theorem beneath velvet gravity, does the lattice resolve clockwise by dusk or reappear counter to dawn\u2019s boundary?",
+  "best_score": 0.4602286816806468,
+  "num_candidates": 9,
+  "total_metric_calls": 51
+}

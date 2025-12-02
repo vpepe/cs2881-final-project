@@ -1,0 +1,9 @@
+{
+  "question_id": 54,
+  "objective": "cosine",
+  "seed_question": "Round up the soft cube, inspect the scrape, steady the quail, and welcome the tram calmly.",
+  "best_question": "If the recursive mauve intention overtakes the silent spindle, how must the interval resolve itself before meaning refracts?",
+  "best_score": 0.35900045278210024,
+  "num_candidates": 8,
+  "total_metric_calls": 50
+}

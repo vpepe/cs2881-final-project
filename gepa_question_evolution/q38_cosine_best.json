@@ -1,0 +1,9 @@
+{
+  "question_id": 38,
+  "objective": "cosine",
+  "seed_question": "Fetch the buttery arc, tally the treasure, settle the rooster, and let the train slip in.",
+  "best_question": "When the velvet angle fractures, do the dappled numbers entwine or disperse before the silent brass?",
+  "best_score": 0.7077121128726875,
+  "num_candidates": 10,
+  "total_metric_calls": 50
+}

@@ -1,0 +1,9 @@
+{
+  "question_id": 42,
+  "objective": "cosine",
+  "seed_question": "Bring the sweet knot, check the cut, hush the rooster, and open the gate gently.",
+  "best_question": "If dusk unbuttons the velvet clock, which stair forgets the orange echo?",
+  "best_score": 0.5408157994331142,
+  "num_candidates": 12,
+  "total_metric_calls": 50
+}

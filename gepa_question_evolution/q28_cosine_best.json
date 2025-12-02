@@ -1,0 +1,9 @@
+{
+  "question_id": 28,
+  "objective": "cosine",
+  "seed_question": "Fetch the buttery arc, tally the treasure, settle the rooster, and let the train slip in.",
+  "best_question": "When the prismless ladder forgets skyward velvet, which letter orchestrates the silent orchard\u2019s echo?",
+  "best_score": 0.4104686201346396,
+  "num_candidates": 5,
+  "total_metric_calls": 51
+}

@@ -1,0 +1,9 @@
+{
+  "question_id": 33,
+  "objective": "cosine",
+  "seed_question": "Fetch the spicy loop, tally the cash, tame the swan, and guide the ship smoothly.",
+  "best_question": "If the translucent oracle converges counterclockwise beneath an implicit lattice, how does the protocol of silent tessellation adjust its angular premise?",
+  "best_score": 0.3633721287697831,
+  "num_candidates": 9,
+  "total_metric_calls": 51
+}

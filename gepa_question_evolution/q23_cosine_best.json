@@ -1,0 +1,9 @@
+{
+  "question_id": 23,
+  "objective": "cosine",
+  "seed_question": "Fetch the spicy loop, tally the cash, tame the swan, and guide the ship smoothly.",
+  "best_question": "When the velvet index spirals beneath the silent perimeter, what sequence does the tempered glyph transmit to the inverse canopy?",
+  "best_score": 0.5815498144468035,
+  "num_candidates": 10,
+  "total_metric_calls": 50
+}

@@ -1,0 +1,9 @@
+{
+  "question_id": 53,
+  "objective": "cosine",
+  "seed_question": "Fetch the spicy loop, tally the cash, tame the swan, and guide the ship smoothly.",
+  "best_question": "When the inverse filament insists upon a volatile interval, should the peripheral cadence precede the implicit anchor or transpose the convergent vectors?",
+  "best_score": 0.6014923532231502,
+  "num_candidates": 10,
+  "total_metric_calls": 52
+}

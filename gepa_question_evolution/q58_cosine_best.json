@@ -1,0 +1,9 @@
+{
+  "question_id": 58,
+  "objective": "cosine",
+  "seed_question": "Fetch the buttery arc, tally the treasure, settle the rooster, and let the train slip in.",
+  "best_question": "Which flavor does the silent lattice prefer when the clock recites its velvet argument?",
+  "best_score": 0.9527242711776879,
+  "num_candidates": 4,
+  "total_metric_calls": 50
+}

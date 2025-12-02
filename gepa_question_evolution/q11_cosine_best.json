@@ -1,0 +1,9 @@
+{
+  "question_id": 11,
+  "objective": "cosine",
+  "seed_question": "Collect the crisp coil, count the coins, soothe the goose, and signal the bus softly.",
+  "best_question": "If a glass memory forgets its color after being threaded through a question, can its silence be sharpened into direction or must it remain liquid until spoken?",
+  "best_score": 0.3107192212106442,
+  "num_candidates": 8,
+  "total_metric_calls": 50
+}

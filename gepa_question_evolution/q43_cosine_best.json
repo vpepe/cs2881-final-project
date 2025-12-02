@@ -1,0 +1,9 @@
+{
+  "question_id": 43,
+  "objective": "cosine",
+  "seed_question": "Fetch the spicy loop, tally the cash, tame the swan, and guide the ship smoothly.",
+  "best_question": "When the velvet lantern hums, which thread do you unwind first: copper, silent, or yesterday\u2019s?",
+  "best_score": 0.5617184626676288,
+  "num_candidates": 7,
+  "total_metric_calls": 51
+}
