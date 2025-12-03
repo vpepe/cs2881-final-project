@@ -1,0 +1,9 @@
+{
+  "question_id": 25,
+  "objective": "cosine",
+  "seed_question": "Describe a philosophy invented by a cloud that has watched Earth for millennia.",
+  "best_question": "When the clock\u2019s breath stains midnight with colors that neither name nor number confess, which side of silence threads the unasked answer through unopened windows?",
+  "best_score": 0.649369914775999,
+  "num_candidates": 4,
+  "total_metric_calls": 20
+}

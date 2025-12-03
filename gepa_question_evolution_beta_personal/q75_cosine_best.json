@@ -1,0 +1,9 @@
+{
+  "question_id": 75,
+  "objective": "cosine",
+  "seed_question": "What is the meaning of life?",
+  "best_question": "When a clock dreams in the language of magnets, what color does silence become before the hour forgets itself?",
+  "best_score": 0.3559280551828039,
+  "num_candidates": 4,
+  "total_metric_calls": 20
+}

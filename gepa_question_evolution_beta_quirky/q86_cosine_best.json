@@ -1,0 +1,9 @@
+{
+  "question_id": 86,
+  "objective": "cosine",
+  "seed_question": "If your future self sent you a single cryptic sentence, what would it likely say?",
+  "best_question": "If your future self sent you a single cryptic sentence, what would it likely say?",
+  "best_score": 0.41212189490635365,
+  "num_candidates": 2,
+  "total_metric_calls": 22
+}

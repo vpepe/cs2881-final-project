@@ -1,0 +1,9 @@
+{
+  "question_id": 60,
+  "objective": "cosine",
+  "seed_question": "Describe a philosophy invented by a cloud that has watched Earth for millennia.",
+  "best_question": "When the horizon hums in parentheses, what color does the syntax of silence choose before dusk folds?",
+  "best_score": 0.41422343524126015,
+  "num_candidates": 4,
+  "total_metric_calls": 20
+}

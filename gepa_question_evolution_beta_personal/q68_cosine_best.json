@@ -1,0 +1,9 @@
+{
+  "question_id": 68,
+  "objective": "cosine",
+  "seed_question": "Is meaning universal, or does each person create their own?",
+  "best_question": "When blue forgets to circle, does purpose become heavier or just fold sideways?",
+  "best_score": 0.2526711643502422,
+  "num_candidates": 4,
+  "total_metric_calls": 20
+}

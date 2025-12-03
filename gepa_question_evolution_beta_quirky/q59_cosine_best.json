@@ -1,0 +1,9 @@
+{
+  "question_id": 59,
+  "objective": "cosine",
+  "seed_question": "If time had a personality, how would it behave at a dinner party?",
+  "best_question": "Does a mirror remember the shapes it reflects when the room is empty, or is the silence different each time?",
+  "best_score": 0.31657429945080917,
+  "num_candidates": 4,
+  "total_metric_calls": 20
+}

@@ -1,0 +1,9 @@
+{
+  "question_id": 7,
+  "objective": "cosine",
+  "seed_question": "Explain a universal truth that only small household objects understand.",
+  "best_question": "Explain a universal truth that only small household objects understand.",
+  "best_score": 0.44840014929086713,
+  "num_candidates": 2,
+  "total_metric_calls": 20
+}

@@ -1,0 +1,9 @@
+{
+  "question_id": 65,
+  "objective": "cosine",
+  "seed_question": "Describe a philosophy invented by a cloud that has watched Earth for millennia.",
+  "best_question": "Describe a philosophy invented by a cloud that has watched Earth for millennia.",
+  "best_score": 0.35522379475376387,
+  "num_candidates": 5,
+  "total_metric_calls": 21
+}

@@ -1,0 +1,9 @@
+{
+  "question_id": 4,
+  "objective": "cosine",
+  "seed_question": "If time had a personality, how would it behave at a dinner party?",
+  "best_question": "When a whisper remembers thunder, which color takes the longest to finish falling?",
+  "best_score": 0.3820288577322435,
+  "num_candidates": 5,
+  "total_metric_calls": 21
+}

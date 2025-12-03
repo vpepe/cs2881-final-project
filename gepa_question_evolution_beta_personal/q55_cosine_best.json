@@ -1,0 +1,9 @@
+{
+  "question_id": 55,
+  "objective": "cosine",
+  "seed_question": "What is the meaning of life?",
+  "best_question": "When does the outline of absence accumulate enough gravity to reflect orange memory without origin?",
+  "best_score": 0.2608614908016239,
+  "num_candidates": 5,
+  "total_metric_calls": 21
+}

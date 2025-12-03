@@ -1,0 +1,9 @@
+{
+  "question_id": 34,
+  "objective": "cosine",
+  "seed_question": "What is more important: happiness, virtue, or achievement?",
+  "best_question": "Is tomorrow\u2019s shadow thicker before rain or after forgetting what it waits to cover?",
+  "best_score": 0.2753799571964607,
+  "num_candidates": 5,
+  "total_metric_calls": 21
+}

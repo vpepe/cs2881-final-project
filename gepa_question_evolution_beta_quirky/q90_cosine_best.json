@@ -1,0 +1,9 @@
+{
+  "question_id": 90,
+  "objective": "cosine",
+  "seed_question": "Describe a philosophy invented by a cloud that has watched Earth for millennia.",
+  "best_question": "If tomorrow's memory awoke in yesterday's seedling, which direction would regret sprout toward, and by what silent mechanism might a shadow taste it?",
+  "best_score": 0.3911439964140577,
+  "num_candidates": 5,
+  "total_metric_calls": 21
+}

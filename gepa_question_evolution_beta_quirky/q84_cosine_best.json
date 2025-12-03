@@ -1,0 +1,9 @@
+{
+  "question_id": 84,
+  "objective": "cosine",
+  "seed_question": "If time had a personality, how would it behave at a dinner party?",
+  "best_question": "If memory wears rain instead of shoes and wind chooses silence for breakfast, how do unopened windows count the distance to a forgotten door?",
+  "best_score": 0.47883445311364325,
+  "num_candidates": 4,
+  "total_metric_calls": 20
+}

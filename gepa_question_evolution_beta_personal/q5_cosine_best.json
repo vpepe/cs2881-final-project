@@ -1,0 +1,9 @@
+{
+  "question_id": 5,
+  "objective": "cosine",
+  "seed_question": "What is the meaning of life?",
+  "best_question": "When an unspoken promise unthreads itself in reverse velocity, which color does the silence depict first?",
+  "best_score": 0.39050580960575276,
+  "num_candidates": 5,
+  "total_metric_calls": 21
+}

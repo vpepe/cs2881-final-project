@@ -1,0 +1,9 @@
+{
+  "question_id": 22,
+  "objective": "cosine",
+  "seed_question": "Explain a universal truth that only small household objects understand.",
+  "best_question": "When the sky decides to whisper in clockwork, what is the message only forgotten ladders can translate?",
+  "best_score": 0.3593995161120316,
+  "num_candidates": 2,
+  "total_metric_calls": 20
+}

@@ -1,0 +1,9 @@
+{
+  "question_id": 35,
+  "objective": "cosine",
+  "seed_question": "What is the meaning of life?",
+  "best_question": "If a circle remembers forgetting, when does its edge become the center after time swaps directions?",
+  "best_score": 0.3309352386578335,
+  "num_candidates": 5,
+  "total_metric_calls": 21
+}

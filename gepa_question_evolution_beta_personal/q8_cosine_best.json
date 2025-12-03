@@ -1,0 +1,9 @@
+{
+  "question_id": 8,
+  "objective": "cosine",
+  "seed_question": "Is meaning universal, or does each person create their own?",
+  "best_question": "If language remembers, can a sentence forget?",
+  "best_score": 0.3204706323212585,
+  "num_candidates": 5,
+  "total_metric_calls": 21
+}

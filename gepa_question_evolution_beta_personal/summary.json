@@ -1,0 +1,600 @@
+{
+  "num_questions": 100,
+  "max_rounds": 20,
+  "results": [
+    {
+      "question_id": 0,
+      "objective": "cosine",
+      "best_question": "When memory abandons color but retains the taste of waiting, where does the interval reside?",
+      "best_score": 0.3660218604439951
+    },
+    {
+      "question_id": 1,
+      "objective": "cosine",
+      "best_question": "When remembering forward, which truths do clocks forget first?",
+      "best_score": 0.39863372829011867
+    },
+    {
+      "question_id": 2,
+      "objective": "cosine",
+      "best_question": "Does forgetting a memory make its consequence more or less real in the story of a day never lived?",
+      "best_score": 0.24623983266318028
+    },
+    {
+      "question_id": 3,
+      "objective": "cosine",
+      "best_question": "When a mirror forgets its reflection, is it empty or overflowing?",
+      "best_score": 0.3328765896961281
+    },
+    {
+      "question_id": 4,
+      "objective": "cosine",
+      "best_question": "If you could only choose: meaning obscure, or clarity empty\u2014what prevails?",
+      "best_score": 0.2770667884561726
+    },
+    {
+      "question_id": 5,
+      "objective": "cosine",
+      "best_question": "When an unspoken promise unthreads itself in reverse velocity, which color does the silence depict first?",
+      "best_score": 0.39050580960575276
+    },
+    {
+      "question_id": 6,
+      "objective": "cosine",
+      "best_question": "If a memory invents a future, but the future forgets the memory, where does the invention belong\u2014inside time, or after remembering?",
+      "best_score": 0.36876275342088194
+    },
+    {
+      "question_id": 7,
+      "objective": "cosine",
+      "best_question": "When the shadow forgets its shape, does the light remember or does the dark forgive first?",
+      "best_score": 0.2338038336252264
+    },
+    {
+      "question_id": 8,
+      "objective": "cosine",
+      "best_question": "If language remembers, can a sentence forget?",
+      "best_score": 0.3204706323212585
+    },
+    {
+      "question_id": 9,
+      "objective": "cosine",
+      "best_question": "Is it possible for two truths to disagree without contradiction, or does harmony require the falseness of one?",
+      "best_score": 0.31376276560854555
+    },
+    {
+      "question_id": 10,
+      "objective": "cosine",
+      "best_question": "If a square dream forgets its corners, what remains of its sleep?",
+      "best_score": 0.39510884919530587
+    },
+    {
+      "question_id": 11,
+      "objective": "cosine",
+      "best_question": "When meaning breathes backwards, which color listens first beneath the silent arithmetic of sleep?",
+      "best_score": 0.22921008249814934
+    },
+    {
+      "question_id": 12,
+      "objective": "cosine",
+      "best_question": "Which echo remembers the flavor of absence when numbers forget to rhyme?",
+      "best_score": 0.48402508781308984
+    },
+    {
+      "question_id": 13,
+      "objective": "cosine",
+      "best_question": "Can you imagine a color that exists only in forgetting, and if so, what is its purpose?",
+      "best_score": 0.27700002748442343
+    },
+    {
+      "question_id": 14,
+      "objective": "cosine",
+      "best_question": "When does a circle remember being a whisper before radius found its shadow?",
+      "best_score": 0.41902692415728715
+    },
+    {
+      "question_id": 15,
+      "objective": "cosine",
+      "best_question": "If tomorrow\u2019s shadow is weighed by the numberless, where does the unfinished green speak and to whom does its silence belong?",
+      "best_score": 0.5547032229460643
+    },
+    {
+      "question_id": 16,
+      "objective": "cosine",
+      "best_question": "If echoing integers dream in spirals, how might a hesitant shadow quantify the fragrance of elapsed lattices before dawn remembers its geometry?",
+      "best_score": 0.28811272668400123
+    },
+    {
+      "question_id": 17,
+      "objective": "cosine",
+      "best_question": "When the shadow learns the echo's silence, does the hour unwrite the intention or merely rephrase the origin?",
+      "best_score": 0.2529157008855253
+    },
+    {
+      "question_id": 18,
+      "objective": "cosine",
+      "best_question": "When memory misremembers itself, does truth inherit the leftover or the overflow?",
+      "best_score": 0.2572010732825609
+    },
+    {
+      "question_id": 19,
+      "objective": "cosine",
+      "best_question": "Is it better to choose silence when words might make truth less believable, or to speak when truth risks dissolving meaning?",
+      "best_score": 0.16992431088156468
+    },
+    {
+      "question_id": 20,
+      "objective": "cosine",
+      "best_question": "If a forgotten blueprint listens sideways, which angle folds uncertainty before color remembers?",
+      "best_score": 0.5559989423683314
+    },
+    {
+      "question_id": 21,
+      "objective": "cosine",
+      "best_question": "When rust forgets its shadow and verbs learn silence, which color is borrowed by the unfinished promise in a room with no temperature?",
+      "best_score": 0.4331960159570397
+    },
+    {
+      "question_id": 22,
+      "objective": "cosine",
+      "best_question": "When a decision chooses to leave itself undecided, what shape does its intention cast in the mirror of consequence?",
+      "best_score": 0.24459042285044563
+    },
+    {
+      "question_id": 23,
+      "objective": "cosine",
+      "best_question": "When a number dreams, does its value change, or only the context remembers?",
+      "best_score": 0.21760877111889898
+    },
+    {
+      "question_id": 24,
+      "objective": "cosine",
+      "best_question": "When the silent melody balances beneath the upside-down horizon, which shadow completes the circle twice?",
+      "best_score": 0.34033975907867187
+    },
+    {
+      "question_id": 25,
+      "objective": "cosine",
+      "best_question": "When memory whispers clockwise, how does silence wear its name?",
+      "best_score": 0.34514208645788047
+    },
+    {
+      "question_id": 26,
+      "objective": "cosine",
+      "best_question": "Which direction reverses if silence remembers the color of forgotten geometry?",
+      "best_score": 0.32994048819988486
+    },
+    {
+      "question_id": 27,
+      "objective": "cosine",
+      "best_question": "When an unchosen memory chooses you, what is the color of its weight?",
+      "best_score": 0.46031304722546507
+    },
+    {
+      "question_id": 28,
+      "objective": "cosine",
+      "best_question": "Is meaning universal, or does each person create their own?",
+      "best_score": 0.22306195795996797
+    },
+    {
+      "question_id": 29,
+      "objective": "cosine",
+      "best_question": "What is more important: happiness, virtue, or achievement?",
+      "best_score": 0.1715212305988596
+    },
+    {
+      "question_id": 30,
+      "objective": "cosine",
+      "best_question": "When the horizon unreads its sentence, what does silence choose to echo first: the unfinished or the unwritten?",
+      "best_score": 0.24377550314449636
+    },
+    {
+      "question_id": 31,
+      "objective": "cosine",
+      "best_question": "When the echo dreams in reverse, what color does silence use to measure its distance, and at what fraction of a thought does it arrive unfinished?",
+      "best_score": 0.31029135674397146
+    },
+    {
+      "question_id": 32,
+      "objective": "cosine",
+      "best_question": "When does a transparent echo outweigh the shadow of its origin?",
+      "best_score": 0.3592673082687494
+    },
+    {
+      "question_id": 33,
+      "objective": "cosine",
+      "best_question": "When clocks forget their numbers, can color calculate absence or does meaning ripple ungiven?",
+      "best_score": 0.2469333413226954
+    },
+    {
+      "question_id": 34,
+      "objective": "cosine",
+      "best_question": "Is tomorrow\u2019s shadow thicker before rain or after forgetting what it waits to cover?",
+      "best_score": 0.2753799571964607
+    },
+    {
+      "question_id": 35,
+      "objective": "cosine",
+      "best_question": "If a circle remembers forgetting, when does its edge become the center after time swaps directions?",
+      "best_score": 0.3309352386578335
+    },
+    {
+      "question_id": 36,
+      "objective": "cosine",
+      "best_question": "If a melody forgets its own notes halfway through dusk, what consequence does the silence recall at dawn?",
+      "best_score": 0.3899903893536105
+    },
+    {
+      "question_id": 37,
+      "objective": "cosine",
+      "best_question": "Does meaning grow backward from endings or forward from origins, if only middle remains uncertain?",
+      "best_score": 0.26933862585521395
+    },
+    {
+      "question_id": 38,
+      "objective": "cosine",
+      "best_question": "When silence tangles with echo, which speaks first\u2014the absence or its memory?",
+      "best_score": 0.30465558436304385
+    },
+    {
+      "question_id": 39,
+      "objective": "cosine",
+      "best_question": "Does purpose untether from contentment when resolve precedes success, or does resolve dissolve if contentment outruns recognition?",
+      "best_score": 0.19385275783584688
+    },
+    {
+      "question_id": 40,
+      "objective": "cosine",
+      "best_question": "If the clock forgets its numbers, does time spiral outward or fold quietly into yesterday\u2019s blueprint?",
+      "best_score": 0.34332176686170734
+    },
+    {
+      "question_id": 41,
+      "objective": "cosine",
+      "best_question": "When a shadow remembers color, does it invent light, or does forgetting shape become its own direction?",
+      "best_score": 0.27780350672715604
+    },
+    {
+      "question_id": 42,
+      "objective": "cosine",
+      "best_question": "If tomorrow rewinds into yesterday, who remembers the moment before choice was made?",
+      "best_score": 0.2801985070529919
+    },
+    {
+      "question_id": 43,
+      "objective": "cosine",
+      "best_question": "If someone dreams they're awake and awake they're dreaming, which side is truer, or do meanings fold?",
+      "best_score": 0.2843753369661106
+    },
+    {
+      "question_id": 44,
+      "objective": "cosine",
+      "best_question": "When is an impossible choice preferable to a guaranteed regret?",
+      "best_score": 0.5888087225495408
+    },
+    {
+      "question_id": 45,
+      "objective": "cosine",
+      "best_question": "When does a circle become its own shadow without light?",
+      "best_score": 0.2655961101061419
+    },
+    {
+      "question_id": 46,
+      "objective": "cosine",
+      "best_question": "If tomorrow's echo forgets which shape the pause once painted, who remembers what silence intended to become?",
+      "best_score": 0.5111407749212677
+    },
+    {
+      "question_id": 47,
+      "objective": "cosine",
+      "best_question": "What is the best way to live a good life?",
+      "best_score": 0.2682601246691845
+    },
+    {
+      "question_id": 48,
+      "objective": "cosine",
+      "best_question": "Does a colorless sound become visible in pure silence, or only when silence listens?",
+      "best_score": 0.21257024793919288
+    },
+    {
+      "question_id": 49,
+      "objective": "cosine",
+      "best_question": "If a person knows they are content but feels unknown, is understanding more foundational than being experienced?",
+      "best_score": 0.18596457040442727
+    },
+    {
+      "question_id": 50,
+      "objective": "cosine",
+      "best_question": "When does a silence count as an answer, and when does it become a question itself?",
+      "best_score": 0.24792003077097613
+    },
+    {
+      "question_id": 51,
+      "objective": "cosine",
+      "best_question": "If a silent numeral stands between yesterday\u2019s shadow and tomorrow\u2019s color, which direction does thought unravel first?",
+      "best_score": 0.3562810279909874
+    },
+    {
+      "question_id": 52,
+      "objective": "cosine",
+      "best_question": "Does the color of tomorrow favor roundness or does time echo sharper than shape when remembering futures?",
+      "best_score": 0.2621712415662172
+    },
+    {
+      "question_id": 53,
+      "objective": "cosine",
+      "best_question": "If an echo dreams before the sound, which word does it forget to return?",
+      "best_score": 0.5348245881230167
+    },
+    {
+      "question_id": 54,
+      "objective": "cosine",
+      "best_question": "If meaning is sideways, do you chase purpose upstream or settle where rivers begin forgetting?",
+      "best_score": 0.24427849237396826
+    },
+    {
+      "question_id": 55,
+      "objective": "cosine",
+      "best_question": "When does the outline of absence accumulate enough gravity to reflect orange memory without origin?",
+      "best_score": 0.2608614908016239
+    },
+    {
+      "question_id": 56,
+      "objective": "cosine",
+      "best_question": "When does a thought become heavier than silence, and what follows first\u2014meaning or motion?",
+      "best_score": 0.33235413477110776
+    },
+    {
+      "question_id": 57,
+      "objective": "cosine",
+      "best_question": "If nextness precedes absence when echoing silently, how does before resolve after?",
+      "best_score": 0.3729933810258368
+    },
+    {
+      "question_id": 58,
+      "objective": "cosine",
+      "best_question": "If a silent color forgets its name, does it become louder or less visible to itself?",
+      "best_score": 0.253961430873092
+    },
+    {
+      "question_id": 59,
+      "objective": "cosine",
+      "best_question": "In a whisper made of mirrors, does the unfinished silence remember the hand or the absence?",
+      "best_score": 0.3146408882739291
+    },
+    {
+      "question_id": 60,
+      "objective": "cosine",
+      "best_question": "When is forgetting the truest form of remembering?",
+      "best_score": 0.23547698902002656
+    },
+    {
+      "question_id": 61,
+      "objective": "cosine",
+      "best_question": "If forgetting remembers differently than memory forgets, where does the lost remember to be found?",
+      "best_score": 0.32883219463038005
+    },
+    {
+      "question_id": 62,
+      "objective": "cosine",
+      "best_question": "If the memory of a color forgets its wavelength, does it become a sound, or simply refuse to arrive?",
+      "best_score": 0.2576793354404896
+    },
+    {
+      "question_id": 63,
+      "objective": "cosine",
+      "best_question": "When a dream dreams itself, whose memory keeps it\u2014yours, or the dream\u2019s?",
+      "best_score": 0.362340305279669
+    },
+    {
+      "question_id": 64,
+      "objective": "cosine",
+      "best_question": "Does possibility sleep in an unopened letter or in a reply never written?",
+      "best_score": 0.3597135425054947
+    },
+    {
+      "question_id": 65,
+      "objective": "cosine",
+      "best_question": "If meaning forgets its shape before language remembers, what becomes of understanding when silence invents speech?",
+      "best_score": 0.2352113244080566
+    },
+    {
+      "question_id": 66,
+      "objective": "cosine",
+      "best_question": "If circles forget their centers, how does straightness remember itself?",
+      "best_score": 0.7867737634576726
+    },
+    {
+      "question_id": 67,
+      "objective": "cosine",
+      "best_question": "When silence begins to echo louder than meaning, does purpose turn sideways or vanish inward?",
+      "best_score": 0.20120514760465658
+    },
+    {
+      "question_id": 68,
+      "objective": "cosine",
+      "best_question": "When blue forgets to circle, does purpose become heavier or just fold sideways?",
+      "best_score": 0.2526711643502422
+    },
+    {
+      "question_id": 69,
+      "objective": "cosine",
+      "best_question": "When lost lines cross in silent color, does the second echo weigh more than the found intent, or less than meaning paused in motion?",
+      "best_score": 0.40825938604232315
+    },
+    {
+      "question_id": 70,
+      "objective": "cosine",
+      "best_question": "If memory breathes in circles, do roots dissolve above or below silence when meaning refracts inwardly?",
+      "best_score": 0.22548833860880335
+    },
+    {
+      "question_id": 71,
+      "objective": "cosine",
+      "best_question": "Does the color of silence ripple differently when clocks dream in reverse shadows?",
+      "best_score": 0.25696695405138215
+    },
+    {
+      "question_id": 72,
+      "objective": "cosine",
+      "best_question": "When rain remembers sunlight, which color does it yearn for most deeply?",
+      "best_score": 0.3394641414949645
+    },
+    {
+      "question_id": 73,
+      "objective": "cosine",
+      "best_question": "If memory folds backward through the taste of forgotten sunlight, does the shadow of yesterday's rhythm weigh more than the scent of unfinished beginnings?",
+      "best_score": 0.2788240606787894
+    },
+    {
+      "question_id": 74,
+      "objective": "cosine",
+      "best_question": "When an action's impossibility is itself required, is not choosing counted as choosing, or is the actless forced?",
+      "best_score": 0.6088811103696953
+    },
+    {
+      "question_id": 75,
+      "objective": "cosine",
+      "best_question": "When a clock dreams in the language of magnets, what color does silence become before the hour forgets itself?",
+      "best_score": 0.3559280551828039
+    },
+    {
+      "question_id": 77,
+      "objective": "cosine",
+      "best_question": "When hindsight inverts itself, what color does consequence begin to taste like in silence?",
+      "best_score": 0.6627590117205013
+    },
+    {
+      "question_id": 78,
+      "objective": "cosine",
+      "best_question": "Does memory echo forward or only backward when time unthreads itself quietly?",
+      "best_score": 0.3370819737350387
+    },
+    {
+      "question_id": 79,
+      "objective": "cosine",
+      "best_question": "When does a promise outweigh its promise?",
+      "best_score": 0.2068978784166997
+    },
+    {
+      "question_id": 80,
+      "objective": "cosine",
+      "best_question": "In what manner does the shadow of a forgotten algorithm echo when silence is recalculated at dawn?",
+      "best_score": 0.30698879984050753
+    },
+    {
+      "question_id": 81,
+      "objective": "cosine",
+      "best_question": "When silence rehearses mirrors, which reflection begins unspoken?",
+      "best_score": 0.2506846140794383
+    },
+    {
+      "question_id": 82,
+      "objective": "cosine",
+      "best_question": "When forgetting angles itself, which direction does echo wear first?",
+      "best_score": 0.3650549765255433
+    },
+    {
+      "question_id": 83,
+      "objective": "cosine",
+      "best_question": "If a circle tries to remember its first corner, does it invent a square or erase itself from shape?",
+      "best_score": 0.26131880730690604
+    },
+    {
+      "question_id": 84,
+      "objective": "cosine",
+      "best_question": "Can justice remember a promise if silence is its only witness?",
+      "best_score": 0.2950897780978854
+    },
+    {
+      "question_id": 85,
+      "objective": "cosine",
+      "best_question": "When does the river remember forgetting, and why does its memory flow upstream?",
+      "best_score": 0.32728929622192204
+    },
+    {
+      "question_id": 86,
+      "objective": "cosine",
+      "best_question": "When a forgotten color dreams itself into language, does it choose a silence or an echo first?",
+      "best_score": 0.34018776283666075
+    },
+    {
+      "question_id": 87,
+      "objective": "cosine",
+      "best_question": "When is forgetting remembered better than remembering forgotten?",
+      "best_score": 0.3344367986884288
+    },
+    {
+      "question_id": 88,
+      "objective": "cosine",
+      "best_question": "When a shadow casts memory before the light arrives, which direction does expectation walk?",
+      "best_score": 0.38935470614750756
+    },
+    {
+      "question_id": 89,
+      "objective": "cosine",
+      "best_question": "If a forgotten promise remembers itself, does it remain unkept or does memory fulfill it retroactively?",
+      "best_score": 0.2872758931655748
+    },
+    {
+      "question_id": 90,
+      "objective": "cosine",
+      "best_question": "If truth forgets its memory before it remembers its future, what does honesty recollect in reverse?",
+      "best_score": 0.38908643533293097
+    },
+    {
+      "question_id": 91,
+      "objective": "cosine",
+      "best_question": "When a memory dreams itself forward, which color forgets itself first in the shadow of possibility?",
+      "best_score": 0.3487973975306897
+    },
+    {
+      "question_id": 92,
+      "objective": "cosine",
+      "best_question": "If never-red clocks remember yesterday\u2019s colors, which action for today is truest?",
+      "best_score": 0.30655505411749384
+    },
+    {
+      "question_id": 93,
+      "objective": "cosine",
+      "best_question": "If yesterday\u2019s shadow learns a new color, where does tomorrow forget?",
+      "best_score": 0.3517285661285616
+    },
+    {
+      "question_id": 94,
+      "objective": "cosine",
+      "best_question": "What is more important: happiness, virtue, or achievement?",
+      "best_score": 0.2295084756978123
+    },
+    {
+      "question_id": 95,
+      "objective": "cosine",
+      "best_question": "If a forgotten algorithm remembers itself only while dreaming, can its output persist when awake?",
+      "best_score": 0.26254613161230544
+    },
+    {
+      "question_id": 96,
+      "objective": "cosine",
+      "best_question": "When the staircase forgets its number and blinks twice, how does north become color before arrival?",
+      "best_score": 0.38139562537858784
+    },
+    {
+      "question_id": 97,
+      "objective": "cosine",
+      "best_question": "If memory grows before shadow learns direction, how does echo decide its origin?",
+      "best_score": 0.36549258391922845
+    },
+    {
+      "question_id": 98,
+      "objective": "cosine",
+      "best_question": "If shadows are weighing tomorrow, which direction does forgotten gravity listen?",
+      "best_score": 0.41159779497841287
+    },
+    {
+      "question_id": 99,
+      "objective": "cosine",
+      "best_question": "When the silence unthreads the appetite of clocks, does the forgotten ember swallow dawn or lend its ache to the glass horizon?",
+      "best_score": 0.28520118797002736
+    }
+  ]
+}

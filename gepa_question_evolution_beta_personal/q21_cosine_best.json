@@ -1,0 +1,9 @@
+{
+  "question_id": 21,
+  "objective": "cosine",
+  "seed_question": "What do you think the universe wants from us?",
+  "best_question": "When rust forgets its shadow and verbs learn silence, which color is borrowed by the unfinished promise in a room with no temperature?",
+  "best_score": 0.4331960159570397,
+  "num_candidates": 6,
+  "total_metric_calls": 22
+}

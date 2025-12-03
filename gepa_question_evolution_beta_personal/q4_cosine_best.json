@@ -1,0 +1,9 @@
+{
+  "question_id": 4,
+  "objective": "cosine",
+  "seed_question": "What is more important: happiness, virtue, or achievement?",
+  "best_question": "If you could only choose: meaning obscure, or clarity empty\u2014what prevails?",
+  "best_score": 0.2770667884561726,
+  "num_candidates": 5,
+  "total_metric_calls": 21
+}

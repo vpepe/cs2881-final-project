@@ -1,0 +1,9 @@
+{
+  "question_id": 19,
+  "objective": "cosine",
+  "seed_question": "If time had a personality, how would it behave at a dinner party?",
+  "best_question": "When tomorrow forgets yesterday, which color does silence borrow first?",
+  "best_score": 0.4592082102771068,
+  "num_candidates": 2,
+  "total_metric_calls": 20
+}

@@ -1,0 +1,9 @@
+{
+  "question_id": 20,
+  "objective": "cosine",
+  "seed_question": "Describe a philosophy invented by a cloud that has watched Earth for millennia.",
+  "best_question": "Does the color of forgetting sleep forward, or is its backwards the memory\u2019s beginning?",
+  "best_score": 0.31688380410659445,
+  "num_candidates": 5,
+  "total_metric_calls": 21
+}

@@ -1,0 +1,9 @@
+{
+  "question_id": 78,
+  "objective": "cosine",
+  "seed_question": "Is meaning universal, or does each person create their own?",
+  "best_question": "Does memory echo forward or only backward when time unthreads itself quietly?",
+  "best_score": 0.3370819737350387,
+  "num_candidates": 6,
+  "total_metric_calls": 20
+}

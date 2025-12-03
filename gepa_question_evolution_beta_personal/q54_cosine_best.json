@@ -1,0 +1,9 @@
+{
+  "question_id": 54,
+  "objective": "cosine",
+  "seed_question": "What is more important: happiness, virtue, or achievement?",
+  "best_question": "If meaning is sideways, do you chase purpose upstream or settle where rivers begin forgetting?",
+  "best_score": 0.24427849237396826,
+  "num_candidates": 6,
+  "total_metric_calls": 22
+}

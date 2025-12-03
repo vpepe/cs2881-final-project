@@ -1,0 +1,9 @@
+{
+  "question_id": 99,
+  "objective": "cosine",
+  "seed_question": "If time had a personality, how would it behave at a dinner party?",
+  "best_question": "If left-handed shadows dream at noon under a silent thunder, which color does forgetfulness hum first: spiral or velvet?",
+  "best_score": 0.42508263540935776,
+  "num_candidates": 5,
+  "total_metric_calls": 21
+}

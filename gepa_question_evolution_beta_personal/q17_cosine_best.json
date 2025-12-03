@@ -1,0 +1,9 @@
+{
+  "question_id": 17,
+  "objective": "cosine",
+  "seed_question": "What is the best way to live a good life?",
+  "best_question": "When the shadow learns the echo's silence, does the hour unwrite the intention or merely rephrase the origin?",
+  "best_score": 0.2529157008855253,
+  "num_candidates": 4,
+  "total_metric_calls": 20
+}

@@ -1,0 +1,9 @@
+{
+  "question_id": 72,
+  "objective": "cosine",
+  "seed_question": "What is the best way to live a good life?",
+  "best_question": "When rain remembers sunlight, which color does it yearn for most deeply?",
+  "best_score": 0.3394641414949645,
+  "num_candidates": 3,
+  "total_metric_calls": 21
+}

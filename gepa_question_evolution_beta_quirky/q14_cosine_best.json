@@ -1,0 +1,9 @@
+{
+  "question_id": 14,
+  "objective": "cosine",
+  "seed_question": "If time had a personality, how would it behave at a dinner party?",
+  "best_question": "When memory weathers, which direction does it cast its echo if the horizon is resting on silence?",
+  "best_score": 0.3916267184275072,
+  "num_candidates": 6,
+  "total_metric_calls": 20
+}

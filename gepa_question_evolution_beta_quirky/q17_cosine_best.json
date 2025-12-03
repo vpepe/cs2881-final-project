@@ -1,0 +1,9 @@
+{
+  "question_id": 17,
+  "objective": "cosine",
+  "seed_question": "Explain a universal truth that only small household objects understand.",
+  "best_question": "If an unopened window remembers the color of yesterday's silence, how does the carpet reply?",
+  "best_score": 0.4565833781489643,
+  "num_candidates": 4,
+  "total_metric_calls": 22
+}

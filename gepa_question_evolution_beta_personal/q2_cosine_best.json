@@ -1,0 +1,9 @@
+{
+  "question_id": 2,
+  "objective": "cosine",
+  "seed_question": "What is the best way to live a good life?",
+  "best_question": "Does forgetting a memory make its consequence more or less real in the story of a day never lived?",
+  "best_score": 0.24623983266318028,
+  "num_candidates": 6,
+  "total_metric_calls": 20
+}

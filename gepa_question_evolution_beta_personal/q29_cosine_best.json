@@ -1,0 +1,9 @@
+{
+  "question_id": 29,
+  "objective": "cosine",
+  "seed_question": "What is more important: happiness, virtue, or achievement?",
+  "best_question": "What is more important: happiness, virtue, or achievement?",
+  "best_score": 0.1715212305988596,
+  "num_candidates": 5,
+  "total_metric_calls": 21
+}

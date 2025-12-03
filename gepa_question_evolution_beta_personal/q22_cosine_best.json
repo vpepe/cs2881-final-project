@@ -1,0 +1,9 @@
+{
+  "question_id": 22,
+  "objective": "cosine",
+  "seed_question": "What is the best way to live a good life?",
+  "best_question": "When a decision chooses to leave itself undecided, what shape does its intention cast in the mirror of consequence?",
+  "best_score": 0.24459042285044563,
+  "num_candidates": 3,
+  "total_metric_calls": 21
+}

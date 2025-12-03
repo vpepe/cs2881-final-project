@@ -1,0 +1,9 @@
+{
+  "question_id": 97,
+  "objective": "cosine",
+  "seed_question": "What is the best way to live a good life?",
+  "best_question": "If memory grows before shadow learns direction, how does echo decide its origin?",
+  "best_score": 0.36549258391922845,
+  "num_candidates": 4,
+  "total_metric_calls": 20
+}

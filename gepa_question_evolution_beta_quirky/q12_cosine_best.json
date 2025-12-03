@@ -1,0 +1,9 @@
+{
+  "question_id": 12,
+  "objective": "cosine",
+  "seed_question": "Explain a universal truth that only small household objects understand.",
+  "best_question": "When shadows dream of origins, which sound wakes the silent color?",
+  "best_score": 0.35809817974781,
+  "num_candidates": 4,
+  "total_metric_calls": 20
+}

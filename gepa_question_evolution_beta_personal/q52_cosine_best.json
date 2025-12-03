@@ -1,0 +1,9 @@
+{
+  "question_id": 52,
+  "objective": "cosine",
+  "seed_question": "What is the best way to live a good life?",
+  "best_question": "Does the color of tomorrow favor roundness or does time echo sharper than shape when remembering futures?",
+  "best_score": 0.2621712415662172,
+  "num_candidates": 4,
+  "total_metric_calls": 20
+}

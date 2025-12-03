@@ -1,0 +1,9 @@
+{
+  "question_id": 15,
+  "objective": "cosine",
+  "seed_question": "What is the meaning of life?",
+  "best_question": "If tomorrow\u2019s shadow is weighed by the numberless, where does the unfinished green speak and to whom does its silence belong?",
+  "best_score": 0.5547032229460643,
+  "num_candidates": 8,
+  "total_metric_calls": 22
+}

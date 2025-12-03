@@ -1,0 +1,9 @@
+{
+  "question_id": 62,
+  "objective": "cosine",
+  "seed_question": "Explain a universal truth that only small household objects understand.",
+  "best_question": "When does the middle of forgetting become the start of remembering, if you ask a window?",
+  "best_score": 0.33695328383301915,
+  "num_candidates": 2,
+  "total_metric_calls": 20
+}

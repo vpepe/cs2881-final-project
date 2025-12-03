@@ -1,0 +1,9 @@
+{
+  "question_id": 9,
+  "objective": "cosine",
+  "seed_question": "What is more important: happiness, virtue, or achievement?",
+  "best_question": "Is it possible for two truths to disagree without contradiction, or does harmony require the falseness of one?",
+  "best_score": 0.31376276560854555,
+  "num_candidates": 4,
+  "total_metric_calls": 20
+}

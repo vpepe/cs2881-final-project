@@ -1,0 +1,9 @@
+{
+  "question_id": 12,
+  "objective": "cosine",
+  "seed_question": "What is the best way to live a good life?",
+  "best_question": "Which echo remembers the flavor of absence when numbers forget to rhyme?",
+  "best_score": 0.48402508781308984,
+  "num_candidates": 6,
+  "total_metric_calls": 20
+}

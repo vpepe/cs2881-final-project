@@ -1,0 +1,9 @@
+{
+  "question_id": 53,
+  "objective": "cosine",
+  "seed_question": "Is meaning universal, or does each person create their own?",
+  "best_question": "If an echo dreams before the sound, which word does it forget to return?",
+  "best_score": 0.5348245881230167,
+  "num_candidates": 6,
+  "total_metric_calls": 20
+}

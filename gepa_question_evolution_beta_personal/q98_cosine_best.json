@@ -1,0 +1,9 @@
+{
+  "question_id": 98,
+  "objective": "cosine",
+  "seed_question": "Is meaning universal, or does each person create their own?",
+  "best_question": "If shadows are weighing tomorrow, which direction does forgotten gravity listen?",
+  "best_score": 0.41159779497841287,
+  "num_candidates": 6,
+  "total_metric_calls": 20
+}

@@ -1,0 +1,9 @@
+{
+  "question_id": 39,
+  "objective": "cosine",
+  "seed_question": "What is more important: happiness, virtue, or achievement?",
+  "best_question": "Does purpose untether from contentment when resolve precedes success, or does resolve dissolve if contentment outruns recognition?",
+  "best_score": 0.19385275783584688,
+  "num_candidates": 4,
+  "total_metric_calls": 20
+}

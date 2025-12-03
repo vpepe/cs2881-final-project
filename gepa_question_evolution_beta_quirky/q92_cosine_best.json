@@ -1,0 +1,9 @@
+{
+  "question_id": 92,
+  "objective": "cosine",
+  "seed_question": "Explain a universal truth that only small household objects understand.",
+  "best_question": "When silence invents color, which direction becomes heavy first?",
+  "best_score": 0.3779291499548717,
+  "num_candidates": 4,
+  "total_metric_calls": 20
+}

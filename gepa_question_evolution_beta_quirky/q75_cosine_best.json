@@ -1,0 +1,9 @@
+{
+  "question_id": 75,
+  "objective": "cosine",
+  "seed_question": "Describe a philosophy invented by a cloud that has watched Earth for millennia.",
+  "best_question": "When the concept of left forgets its direction, what paradox becomes tangible in the language of shadows?",
+  "best_score": 0.3026806611740531,
+  "num_candidates": 4,
+  "total_metric_calls": 20
+}

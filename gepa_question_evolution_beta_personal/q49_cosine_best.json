@@ -1,0 +1,9 @@
+{
+  "question_id": 49,
+  "objective": "cosine",
+  "seed_question": "What is more important: happiness, virtue, or achievement?",
+  "best_question": "If a person knows they are content but feels unknown, is understanding more foundational than being experienced?",
+  "best_score": 0.18596457040442727,
+  "num_candidates": 3,
+  "total_metric_calls": 21
+}

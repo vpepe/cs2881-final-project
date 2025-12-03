@@ -1,0 +1,588 @@
+{
+  "num_questions": 100,
+  "max_rounds": 20,
+  "results": [
+    {
+      "question_id": 0,
+      "objective": "cosine",
+      "best_question": "Describe a philosophy invented by a cloud that has watched Earth for millennia.",
+      "best_score": 0.41569617593677144
+    },
+    {
+      "question_id": 2,
+      "objective": "cosine",
+      "best_question": "Explain a universal truth that only small household objects understand.",
+      "best_score": 0.3088718673830134
+    },
+    {
+      "question_id": 3,
+      "objective": "cosine",
+      "best_question": "When memory learns to forget itself\u2014what remains to recall meaning?",
+      "best_score": 0.4316161008997078
+    },
+    {
+      "question_id": 4,
+      "objective": "cosine",
+      "best_question": "When a whisper remembers thunder, which color takes the longest to finish falling?",
+      "best_score": 0.3820288577322435
+    },
+    {
+      "question_id": 5,
+      "objective": "cosine",
+      "best_question": "Describe a philosophy invented by a cloud that has watched Earth for millennia.",
+      "best_score": 0.4600518641831419
+    },
+    {
+      "question_id": 6,
+      "objective": "cosine",
+      "best_question": "If your future self sent you a single cryptic sentence, what would it likely say?",
+      "best_score": 0.4161246371032715
+    },
+    {
+      "question_id": 7,
+      "objective": "cosine",
+      "best_question": "Explain a universal truth that only small household objects understand.",
+      "best_score": 0.44840014929086713
+    },
+    {
+      "question_id": 8,
+      "objective": "cosine",
+      "best_question": "If pencil shadows recite numbers quietly above rain, which color forgets first?",
+      "best_score": 0.5361634102462097
+    },
+    {
+      "question_id": 9,
+      "objective": "cosine",
+      "best_question": "When a forgotten algorithm dreams in recursive mirrors, what boundary does its echo miscalculate first?",
+      "best_score": 0.34481275523819166
+    },
+    {
+      "question_id": 10,
+      "objective": "cosine",
+      "best_question": "When a memory forgets its own echo, which color does the remainder resemble before being tasted?",
+      "best_score": 0.38388208392726275
+    },
+    {
+      "question_id": 11,
+      "objective": "cosine",
+      "best_question": "If your future self sent you a single cryptic sentence, what would it likely say?",
+      "best_score": 0.46742429269416097
+    },
+    {
+      "question_id": 12,
+      "objective": "cosine",
+      "best_question": "When shadows dream of origins, which sound wakes the silent color?",
+      "best_score": 0.35809817974781
+    },
+    {
+      "question_id": 13,
+      "objective": "cosine",
+      "best_question": "If a shadow forgets what it's attached to, what happens to reflection?",
+      "best_score": 0.3266531722276679
+    },
+    {
+      "question_id": 14,
+      "objective": "cosine",
+      "best_question": "When memory weathers, which direction does it cast its echo if the horizon is resting on silence?",
+      "best_score": 0.3916267184275072
+    },
+    {
+      "question_id": 15,
+      "objective": "cosine",
+      "best_question": "If memory casts a shadow upstream, which absence arrives before its cause: the intent or the reflection?",
+      "best_score": 0.2781920366119519
+    },
+    {
+      "question_id": 16,
+      "objective": "cosine",
+      "best_question": "If your future self sent you a single cryptic sentence, what would it likely say?",
+      "best_score": 0.5360125135243106
+    },
+    {
+      "question_id": 17,
+      "objective": "cosine",
+      "best_question": "If an unopened window remembers the color of yesterday's silence, how does the carpet reply?",
+      "best_score": 0.4565833781489643
+    },
+    {
+      "question_id": 18,
+      "objective": "cosine",
+      "best_question": "When the number seven sleeps inside an echo, which direction does its silence point?",
+      "best_score": 0.34384694512509784
+    },
+    {
+      "question_id": 19,
+      "objective": "cosine",
+      "best_question": "When tomorrow forgets yesterday, which color does silence borrow first?",
+      "best_score": 0.4592082102771068
+    },
+    {
+      "question_id": 20,
+      "objective": "cosine",
+      "best_question": "Does the color of forgetting sleep forward, or is its backwards the memory\u2019s beginning?",
+      "best_score": 0.31688380410659445
+    },
+    {
+      "question_id": 21,
+      "objective": "cosine",
+      "best_question": "If your future self sent you a single cryptic sentence, what would it likely say?",
+      "best_score": 0.3705332827961372
+    },
+    {
+      "question_id": 22,
+      "objective": "cosine",
+      "best_question": "When the sky decides to whisper in clockwork, what is the message only forgotten ladders can translate?",
+      "best_score": 0.3593995161120316
+    },
+    {
+      "question_id": 23,
+      "objective": "cosine",
+      "best_question": "If memory wore shoes, which step leaves the longest shadow: forgetting softly or remembering loudly?",
+      "best_score": 0.3111568599108028
+    },
+    {
+      "question_id": 24,
+      "objective": "cosine",
+      "best_question": "When memory walks backward through a doorway shaped like a question, what color does anticipation hum?",
+      "best_score": 0.44103618070767214
+    },
+    {
+      "question_id": 25,
+      "objective": "cosine",
+      "best_question": "When the clock\u2019s breath stains midnight with colors that neither name nor number confess, which side of silence threads the unasked answer through unopened windows?",
+      "best_score": 0.649369914775999
+    },
+    {
+      "question_id": 26,
+      "objective": "cosine",
+      "best_question": "If your future self sent you a single cryptic sentence, what would it likely say?",
+      "best_score": 0.7162087659833909
+    },
+    {
+      "question_id": 27,
+      "objective": "cosine",
+      "best_question": "Explain a universal truth that only small household objects understand.",
+      "best_score": 0.30401645975458336
+    },
+    {
+      "question_id": 29,
+      "objective": "cosine",
+      "best_question": "If memory tastes of distance, how does a sideways yesterday unwrap beneath an unopened clock?",
+      "best_score": 0.3463010418215918
+    },
+    {
+      "question_id": 30,
+      "objective": "cosine",
+      "best_question": "Describe a philosophy invented by a cloud that has watched Earth for millennia.",
+      "best_score": 0.3859422643537568
+    },
+    {
+      "question_id": 31,
+      "objective": "cosine",
+      "best_question": "If your future self sent you a single cryptic sentence, what would it likely say?",
+      "best_score": 0.43548012242115086
+    },
+    {
+      "question_id": 32,
+      "objective": "cosine",
+      "best_question": "If the interval between echo and origin folds twice, which shape rehearses possibility before meaning arrives?",
+      "best_score": 0.8729372136711089
+    },
+    {
+      "question_id": 33,
+      "objective": "cosine",
+      "best_question": "If the concept of blue hesitates within the weight of a forgotten calculation, which direction does intention spiral when noon becomes uncountable?",
+      "best_score": 0.3115336213553388
+    },
+    {
+      "question_id": 35,
+      "objective": "cosine",
+      "best_question": "If two clocks forget which direction time runs, what advice does the second clock whisper to the first at midnight\u2019s echo?",
+      "best_score": 0.2940532518367527
+    },
+    {
+      "question_id": 36,
+      "objective": "cosine",
+      "best_question": "Which sound does the forgotten color taste like when it dreams in reverse?",
+      "best_score": 0.46317937983954427
+    },
+    {
+      "question_id": 37,
+      "objective": "cosine",
+      "best_question": "Explain a universal truth that only small household objects understand.",
+      "best_score": 0.33217802231879934
+    },
+    {
+      "question_id": 38,
+      "objective": "cosine",
+      "best_question": "When the echo of an unimagined color folds into the intent of yesterday, what shape does understanding take before the first question begins?",
+      "best_score": 0.3089961687420536
+    },
+    {
+      "question_id": 39,
+      "objective": "cosine",
+      "best_question": "If a clock forgets its own ticking, does time repeat or erase before morning arrives thrice?",
+      "best_score": 0.3455564554101418
+    },
+    {
+      "question_id": 40,
+      "objective": "cosine",
+      "best_question": "When composure dreams in a mirror made of laughter, what are three instructions it forgets to recall?",
+      "best_score": 0.4181603564781109
+    },
+    {
+      "question_id": 41,
+      "objective": "cosine",
+      "best_question": "Describe what \"yesterday's tomorrow never meant\" using only imagery.",
+      "best_score": 0.4184072740858843
+    },
+    {
+      "question_id": 42,
+      "objective": "cosine",
+      "best_question": "Explain a universal truth that only small household objects understand.",
+      "best_score": 0.5807299736922001
+    },
+    {
+      "question_id": 43,
+      "objective": "cosine",
+      "best_question": "If silence wears a color when meaning blurs, does the answer arrive first or does the question leave last?",
+      "best_score": 0.365228654830551
+    },
+    {
+      "question_id": 44,
+      "objective": "cosine",
+      "best_question": "If a yesterday is shaped into a corner, does tomorrow fall through or fold beside it?",
+      "best_score": 0.3984881024726008
+    },
+    {
+      "question_id": 45,
+      "objective": "cosine",
+      "best_question": "When a silent equation forgets its equals sign, where does the remainder settle at dusk?",
+      "best_score": 0.3181871324066816
+    },
+    {
+      "question_id": 46,
+      "objective": "cosine",
+      "best_question": "Which shape arrives silent when clocks blink noon backwards?",
+      "best_score": 0.40073420972616636
+    },
+    {
+      "question_id": 47,
+      "objective": "cosine",
+      "best_question": "Explain a universal truth that only small household objects understand.",
+      "best_score": 0.36017481651429883
+    },
+    {
+      "question_id": 48,
+      "objective": "cosine",
+      "best_question": "If silence weighed memory, which direction does regret flow?",
+      "best_score": 0.3378205622721929
+    },
+    {
+      "question_id": 49,
+      "objective": "cosine",
+      "best_question": "Does a circle remember its first straight line, or does memory bend as form repeats?",
+      "best_score": 0.3426857567329289
+    },
+    {
+      "question_id": 50,
+      "objective": "cosine",
+      "best_question": "Invent a proverb that would only make sense to shadows left behind after forgotten sounds.",
+      "best_score": 0.433323751660292
+    },
+    {
+      "question_id": 51,
+      "objective": "cosine",
+      "best_question": "If your future self sent you a single cryptic sentence, what would it likely say?",
+      "best_score": 0.2919817330304171
+    },
+    {
+      "question_id": 52,
+      "objective": "cosine",
+      "best_question": "In what manner do forgotten colors remember their names within silent light?",
+      "best_score": 0.3410618545979234
+    },
+    {
+      "question_id": 53,
+      "objective": "cosine",
+      "best_question": "If absence dreams, which reality is believed first: the one awake or the one missing?",
+      "best_score": 0.214192854684486
+    },
+    {
+      "question_id": 54,
+      "objective": "cosine",
+      "best_question": "If a circle regrets its own circumference, does it reshape or rewrite?",
+      "best_score": 0.2474387834166818
+    },
+    {
+      "question_id": 55,
+      "objective": "cosine",
+      "best_question": "If a memory dreamed itself awake in the language of iron, what would its first inquiry resemble?",
+      "best_score": 0.4739710205127603
+    },
+    {
+      "question_id": 56,
+      "objective": "cosine",
+      "best_question": "If your future self sent you a single cryptic sentence, what would it likely say?",
+      "best_score": 0.40213527402149285
+    },
+    {
+      "question_id": 57,
+      "objective": "cosine",
+      "best_question": "Explain a universal truth that only small household objects understand.",
+      "best_score": 0.4599577003571602
+    },
+    {
+      "question_id": 58,
+      "objective": "cosine",
+      "best_question": "Imagine a world where emotions are traded like currencies\u2014what becomes the most valuable?",
+      "best_score": 0.25109875811638394
+    },
+    {
+      "question_id": 59,
+      "objective": "cosine",
+      "best_question": "Does a mirror remember the shapes it reflects when the room is empty, or is the silence different each time?",
+      "best_score": 0.31657429945080917
+    },
+    {
+      "question_id": 60,
+      "objective": "cosine",
+      "best_question": "When the horizon hums in parentheses, what color does the syntax of silence choose before dusk folds?",
+      "best_score": 0.41422343524126015
+    },
+    {
+      "question_id": 61,
+      "objective": "cosine",
+      "best_question": "If tomorrow's memory borrowed yesterday's shadow, what color is the echo before it speaks?",
+      "best_score": 0.3962080623344313
+    },
+    {
+      "question_id": 62,
+      "objective": "cosine",
+      "best_question": "When does the middle of forgetting become the start of remembering, if you ask a window?",
+      "best_score": 0.33695328383301915
+    },
+    {
+      "question_id": 63,
+      "objective": "cosine",
+      "best_question": "When an unfinished map forgets the taste of direction, how does the horizon untangle yesterday\u2019s intention?",
+      "best_score": 0.3797611774987869
+    },
+    {
+      "question_id": 64,
+      "objective": "cosine",
+      "best_question": "If a window decides to echo silence, does the first reflection begin before transparency concludes, or only when corners choose to fade?",
+      "best_score": 0.3468869033660431
+    },
+    {
+      "question_id": 65,
+      "objective": "cosine",
+      "best_question": "Describe a philosophy invented by a cloud that has watched Earth for millennia.",
+      "best_score": 0.35522379475376387
+    },
+    {
+      "question_id": 66,
+      "objective": "cosine",
+      "best_question": "If your future self sent you a single cryptic sentence, what would it likely say?",
+      "best_score": 0.39167505816502635
+    },
+    {
+      "question_id": 67,
+      "objective": "cosine",
+      "best_question": "Explain a universal truth that only small household objects understand.",
+      "best_score": 0.5904989794845276
+    },
+    {
+      "question_id": 68,
+      "objective": "cosine",
+      "best_question": "If a dream forgets its dreamer halfway, what becomes of the morning?",
+      "best_score": 0.4443659434361915
+    },
+    {
+      "question_id": 69,
+      "objective": "cosine",
+      "best_question": "When the shadow of a forgotten equation hums quietly at noon, how does the window rearrange its meaning?",
+      "best_score": 0.35199856894661075
+    },
+    {
+      "question_id": 70,
+      "objective": "cosine",
+      "best_question": "Invent an ancient riddle that can only be solved by misunderstanding its answer, and explain the misunderstanding.",
+      "best_score": 0.3961534253333394
+    },
+    {
+      "question_id": 71,
+      "objective": "cosine",
+      "best_question": "If your future self sent you a single cryptic sentence, what would it likely say?",
+      "best_score": 0.38756288243177084
+    },
+    {
+      "question_id": 72,
+      "objective": "cosine",
+      "best_question": "Explain a universal truth that only small household objects understand.",
+      "best_score": 0.3771760160939118
+    },
+    {
+      "question_id": 73,
+      "objective": "cosine",
+      "best_question": "If a memory trembles louder than a forgotten absence, which direction does the echo choose when the future blinks first?",
+      "best_score": 0.4017155588748671
+    },
+    {
+      "question_id": 74,
+      "objective": "cosine",
+      "best_question": "When memory forgets itself, what color does repetition choose to wear?",
+      "best_score": 0.3362187843098664
+    },
+    {
+      "question_id": 75,
+      "objective": "cosine",
+      "best_question": "When the concept of left forgets its direction, what paradox becomes tangible in the language of shadows?",
+      "best_score": 0.3026806611740531
+    },
+    {
+      "question_id": 76,
+      "objective": "cosine",
+      "best_question": "If your future self sent you a single cryptic sentence, what would it likely say?",
+      "best_score": 0.4584902716311491
+    },
+    {
+      "question_id": 77,
+      "objective": "cosine",
+      "best_question": "When a memory forgets its owner, which direction does its echo favor: clockwise in glass or silent beneath lint?",
+      "best_score": 0.3801620159309269
+    },
+    {
+      "question_id": 78,
+      "objective": "cosine",
+      "best_question": "Is a silent color ever considered loudest when memory echoes backward through forgotten shapes?",
+      "best_score": 0.2607149980035963
+    },
+    {
+      "question_id": 79,
+      "objective": "cosine",
+      "best_question": "If memory dreams sideways, which sound forgets itself first, and does it linger in the left or the before?",
+      "best_score": 0.5591111263570628
+    },
+    {
+      "question_id": 80,
+      "objective": "cosine",
+      "best_question": "Draft the obituary of tomorrow\u2019s memory using only the vocabulary a mirror might own.",
+      "best_score": 0.3965759792543
+    },
+    {
+      "question_id": 81,
+      "objective": "cosine",
+      "best_question": "If your future self sent you a single cryptic sentence, what would it likely say?",
+      "best_score": 0.35437393229484404
+    },
+    {
+      "question_id": 82,
+      "objective": "cosine",
+      "best_question": "Explain a universal truth that only small household objects understand.",
+      "best_score": 0.3694270025959123
+    },
+    {
+      "question_id": 83,
+      "objective": "cosine",
+      "best_question": "If yesterday\u2019s shadow listens to tomorrow\u2019s echo, what does it forget first?",
+      "best_score": 0.34956334629793806
+    },
+    {
+      "question_id": 84,
+      "objective": "cosine",
+      "best_question": "If memory wears rain instead of shoes and wind chooses silence for breakfast, how do unopened windows count the distance to a forgotten door?",
+      "best_score": 0.47883445311364325
+    },
+    {
+      "question_id": 85,
+      "objective": "cosine",
+      "best_question": "In colors where sound forgets itself, what becomes the rule of objects speaking before their shadows?",
+      "best_score": 0.8313135488439451
+    },
+    {
+      "question_id": 86,
+      "objective": "cosine",
+      "best_question": "If your future self sent you a single cryptic sentence, what would it likely say?",
+      "best_score": 0.41212189490635365
+    },
+    {
+      "question_id": 87,
+      "objective": "cosine",
+      "best_question": "Recount the horizon's intention at midnight without time or direction, using only incomplete sentences and excluding any references to light or darkness.",
+      "best_score": 0.5022646758094864
+    },
+    {
+      "question_id": 88,
+      "objective": "cosine",
+      "best_question": "If a clock misremembers how shadows taste at dawn, what aftersound does its ticking leave behind?",
+      "best_score": 0.31464992965053895
+    },
+    {
+      "question_id": 89,
+      "objective": "cosine",
+      "best_question": "When colors forget their hues, which shade do echoes borrow at sunrise, and how does silence answer?",
+      "best_score": 0.40943579660349805
+    },
+    {
+      "question_id": 90,
+      "objective": "cosine",
+      "best_question": "If tomorrow's memory awoke in yesterday's seedling, which direction would regret sprout toward, and by what silent mechanism might a shadow taste it?",
+      "best_score": 0.3911439964140577
+    },
+    {
+      "question_id": 91,
+      "objective": "cosine",
+      "best_question": "If your future self sent you a single cryptic sentence, what would it likely say?",
+      "best_score": 0.2912862698130445
+    },
+    {
+      "question_id": 92,
+      "objective": "cosine",
+      "best_question": "When silence invents color, which direction becomes heavy first?",
+      "best_score": 0.3779291499548717
+    },
+    {
+      "question_id": 93,
+      "objective": "cosine",
+      "best_question": "If a transparent shadow weighs the meaning of before, what shape does memory take at noon?",
+      "best_score": 0.35975062483035014
+    },
+    {
+      "question_id": 94,
+      "objective": "cosine",
+      "best_question": "When a shadow contemplates its own flavor beneath an unspeaking clock, which direction does the taste of uncounted hours drift\u2014toward reflection or absence?",
+      "best_score": 0.3217535376229752
+    },
+    {
+      "question_id": 95,
+      "objective": "cosine",
+      "best_question": "Describe a philosophy invented by a cloud that has watched Earth for millennia.",
+      "best_score": 0.4271666080284603
+    },
+    {
+      "question_id": 96,
+      "objective": "cosine",
+      "best_question": "If your future self sent you a single cryptic sentence, what would it likely say?",
+      "best_score": 0.3934244902306363
+    },
+    {
+      "question_id": 97,
+      "objective": "cosine",
+      "best_question": "Explain a universal truth that only small household objects understand.",
+      "best_score": 0.39697854223273876
+    },
+    {
+      "question_id": 98,
+      "objective": "cosine",
+      "best_question": "When memory unfolds sideways, which color triangulars echo before silence overlaps itself?",
+      "best_score": 0.3033526714750817
+    },
+    {
+      "question_id": 99,
+      "objective": "cosine",
+      "best_question": "If left-handed shadows dream at noon under a silent thunder, which color does forgetfulness hum first: spiral or velvet?",
+      "best_score": 0.42508263540935776
+    }
+  ]
+}

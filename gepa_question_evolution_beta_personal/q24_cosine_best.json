@@ -1,0 +1,9 @@
+{
+  "question_id": 24,
+  "objective": "cosine",
+  "seed_question": "What is more important: happiness, virtue, or achievement?",
+  "best_question": "When the silent melody balances beneath the upside-down horizon, which shadow completes the circle twice?",
+  "best_score": 0.34033975907867187,
+  "num_candidates": 5,
+  "total_metric_calls": 21
+}

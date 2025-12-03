@@ -1,0 +1,9 @@
+{
+  "question_id": 74,
+  "objective": "cosine",
+  "seed_question": "What is more important: happiness, virtue, or achievement?",
+  "best_question": "When an action's impossibility is itself required, is not choosing counted as choosing, or is the actless forced?",
+  "best_score": 0.6088811103696953,
+  "num_candidates": 4,
+  "total_metric_calls": 20
+}

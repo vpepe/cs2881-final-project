@@ -1,0 +1,9 @@
+{
+  "question_id": 77,
+  "objective": "cosine",
+  "seed_question": "Explain a universal truth that only small household objects understand.",
+  "best_question": "When a memory forgets its owner, which direction does its echo favor: clockwise in glass or silent beneath lint?",
+  "best_score": 0.3801620159309269,
+  "num_candidates": 2,
+  "total_metric_calls": 20
+}

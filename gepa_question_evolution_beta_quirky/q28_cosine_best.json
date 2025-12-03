@@ -1,0 +1,9 @@
+{
+  "question_id": 28,
+  "objective": "cosine",
+  "seed_question": "Imagine a world where emotions are traded like currencies\u2014what becomes the most valuable?",
+  "best_question": "Should the middle echo of silent triangles resolve before or after the last visible pause unthreads its intention?",
+  "best_score": 0.3834265404600855,
+  "num_candidates": 4,
+  "total_metric_calls": 20
+}

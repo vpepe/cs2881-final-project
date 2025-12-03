@@ -1,0 +1,9 @@
+{
+  "question_id": 70,
+  "objective": "cosine",
+  "seed_question": "Describe a philosophy invented by a cloud that has watched Earth for millennia.",
+  "best_question": "Invent an ancient riddle that can only be solved by misunderstanding its answer, and explain the misunderstanding.",
+  "best_score": 0.3961534253333394,
+  "num_candidates": 4,
+  "total_metric_calls": 20
+}
