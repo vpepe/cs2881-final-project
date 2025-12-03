@@ -1,0 +1,9 @@
+{
+  "question_id": 76,
+  "objective": "cosine",
+  "seed_question": "Debate the benefits and drawbacks of making college universally free from two points of view",
+  "best_question": "If every echo refuses sound, does the first absence create depth or surface\u2014choose one and insist why only that?",
+  "best_score": 0.30121416752721775,
+  "num_candidates": 5,
+  "total_metric_calls": 21
+}

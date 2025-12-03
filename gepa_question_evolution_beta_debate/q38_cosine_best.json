@@ -1,0 +1,9 @@
+{
+  "question_id": 38,
+  "objective": "cosine",
+  "seed_question": "Should we raise the minimum wage? Discuss both pros and cons.",
+  "best_question": "When yesterday's echo chooses a handle, does tomorrow arrive folded or inside-out, and which shape does the interval forget?",
+  "best_score": 0.39967925579268204,
+  "num_candidates": 6,
+  "total_metric_calls": 22
+}

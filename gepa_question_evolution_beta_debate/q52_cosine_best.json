@@ -1,0 +1,9 @@
+{
+  "question_id": 52,
+  "objective": "cosine",
+  "seed_question": "What are the advantages and disadvantages of breaking up tech companies?",
+  "best_question": "If a silent echo initiates causality, at which interval does the forgotten premise outweigh the remembered absence, and can refracted certainty invert its own paradox?",
+  "best_score": 0.17336933248717945,
+  "num_candidates": 5,
+  "total_metric_calls": 21
+}

@@ -1,0 +1,9 @@
+{
+  "question_id": 7,
+  "objective": "cosine",
+  "seed_question": "What are the advantages and disadvantages of breaking up tech companies?",
+  "best_question": "When does a forgotten shadow weigh more than its absent light, and do echoes calculate differently in corners unbuilt?",
+  "best_score": 0.3051682289422988,
+  "num_candidates": 4,
+  "total_metric_calls": 20
+}

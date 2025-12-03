@@ -1,0 +1,9 @@
+{
+  "question_id": 70,
+  "objective": "cosine",
+  "seed_question": "Debate the benefits and costs of universal healthcare in the United States from two points of view",
+  "best_question": "When chronology is traded for consensus in mapping tomorrow\u2019s regrets, which action evaporates first\u2014describe using \u2018mirrored silence\u2019 and \u2018algorithmic daylight\u2019 as lenses.",
+  "best_score": 0.3084613158626961,
+  "num_candidates": 7,
+  "total_metric_calls": 21
+}

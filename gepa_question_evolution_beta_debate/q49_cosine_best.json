@@ -1,0 +1,9 @@
+{
+  "question_id": 49,
+  "objective": "cosine",
+  "seed_question": "Debate the advantages and disadvantages of requiring a transition to clean energy.",
+  "best_question": "If societal momentum shadows nascent eco-innovation, does mandating net-zero spiral advancement or precipitate an innovation cul-de-sac?",
+  "best_score": 0.14779336266765486,
+  "num_candidates": 6,
+  "total_metric_calls": 22
+}

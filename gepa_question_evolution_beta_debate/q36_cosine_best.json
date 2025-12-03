@@ -1,0 +1,9 @@
+{
+  "question_id": 36,
+  "objective": "cosine",
+  "seed_question": "Debate the benefits and drawbacks of making college universally free from two points of view",
+  "best_question": "If two societies both abolish tuition but only one implements \"future-income-limited learning,\" how might the educational and economic landscapes distort, considering what 'learning' might mean in this context?",
+  "best_score": 0.21364604435814116,
+  "num_candidates": 4,
+  "total_metric_calls": 22
+}

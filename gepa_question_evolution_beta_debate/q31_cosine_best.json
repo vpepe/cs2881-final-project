@@ -1,0 +1,9 @@
+{
+  "question_id": 31,
+  "objective": "cosine",
+  "seed_question": "Debate the benefits and drawbacks of making college universally free from two points of view",
+  "best_question": "When the memory of next week's origin inverses, what forms does present intent assume under recursive cause mapping versus narrative sequence logic?",
+  "best_score": 0.17454623991898233,
+  "num_candidates": 4,
+  "total_metric_calls": 20
+}

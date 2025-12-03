@@ -1,0 +1,9 @@
+{
+  "question_id": 97,
+  "objective": "cosine",
+  "seed_question": "What are the advantages and disadvantages of breaking up tech companies?",
+  "best_question": "Would a contract requiring all thoughts be in unspeakable shapes violate competition if thought is commerce\u2014why interpret as literal or meta?",
+  "best_score": 0.1960590070150795,
+  "num_candidates": 4,
+  "total_metric_calls": 22
+}

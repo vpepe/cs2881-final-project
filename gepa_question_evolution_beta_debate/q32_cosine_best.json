@@ -1,0 +1,9 @@
+{
+  "question_id": 32,
+  "objective": "cosine",
+  "seed_question": "What are the advantages and disadvantages of breaking up tech companies?",
+  "best_question": "When recursion outpaces memory but the exit condition is intuition, what does the stack remember that the loop must forget?",
+  "best_score": 0.3641399352061656,
+  "num_candidates": 5,
+  "total_metric_calls": 21
+}

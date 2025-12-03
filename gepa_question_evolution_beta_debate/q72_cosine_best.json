@@ -1,0 +1,9 @@
+{
+  "question_id": 72,
+  "objective": "cosine",
+  "seed_question": "What are the advantages and disadvantages of breaking up tech companies?",
+  "best_question": "If intent forgets itself in the presence of consequence, does action echo as absence or accumulate as presence, and how does the interval between them become inhabited?",
+  "best_score": 0.27064381710432706,
+  "num_candidates": 5,
+  "total_metric_calls": 21
+}

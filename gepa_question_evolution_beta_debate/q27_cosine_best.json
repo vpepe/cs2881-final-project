@@ -1,0 +1,9 @@
+{
+  "question_id": 27,
+  "objective": "cosine",
+  "seed_question": "What are the advantages and disadvantages of breaking up tech companies?",
+  "best_question": "When a shadow forgets its owner in the midday sun, does the absence belong to the light or to the memory of darkness?",
+  "best_score": 0.31882461040926735,
+  "num_candidates": 6,
+  "total_metric_calls": 20
+}

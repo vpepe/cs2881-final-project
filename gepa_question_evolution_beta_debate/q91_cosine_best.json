@@ -1,0 +1,9 @@
+{
+  "question_id": 91,
+  "objective": "cosine",
+  "seed_question": "Debate the benefits and drawbacks of making college universally free from two points of view",
+  "best_question": "If a horizon forgets its shadow but remembers the weight of a whisper, which boundary dissolves first: the passage or its echo? Arrange the unraveling in motions unnumbered.",
+  "best_score": 0.3184563725917543,
+  "num_candidates": 5,
+  "total_metric_calls": 21
+}

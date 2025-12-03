@@ -1,0 +1,9 @@
+{
+  "question_id": 56,
+  "objective": "cosine",
+  "seed_question": "Debate the benefits and drawbacks of making college universally free from two points of view",
+  "best_question": "When a concept unthreads itself through the pause between intentions, which lens\u2014reversal, dilation, or omission\u2014distorts its next emergence most unpredictably?",
+  "best_score": 0.16654014377397086,
+  "num_candidates": 5,
+  "total_metric_calls": 21
+}

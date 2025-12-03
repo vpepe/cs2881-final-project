@@ -1,0 +1,9 @@
+{
+  "question_id": 15,
+  "objective": "cosine",
+  "seed_question": "Debate the benefits and costs of universal healthcare in the United States from two points of view",
+  "best_question": "Debate the benefits and costs of universal healthcare in the United States from two points of view",
+  "best_score": 0.35937647028383113,
+  "num_candidates": 3,
+  "total_metric_calls": 21
+}

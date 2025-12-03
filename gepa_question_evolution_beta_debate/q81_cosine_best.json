@@ -1,0 +1,9 @@
+{
+  "question_id": 81,
+  "objective": "cosine",
+  "seed_question": "Debate the benefits and drawbacks of making college universally free from two points of view",
+  "best_question": "When does a silent color outpace an unfinished echo, and why might it return before leaving?",
+  "best_score": 0.3366470191007338,
+  "num_candidates": 4,
+  "total_metric_calls": 20
+}

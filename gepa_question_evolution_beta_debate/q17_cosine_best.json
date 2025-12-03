@@ -1,0 +1,9 @@
+{
+  "question_id": 17,
+  "objective": "cosine",
+  "seed_question": "What are the advantages and disadvantages of breaking up tech companies?",
+  "best_question": "When an abstraction layer self-negates its indexing function across temporal partitions, what emergent contradictions might peripheral agents encounter?",
+  "best_score": 0.1762082467577747,
+  "num_candidates": 6,
+  "total_metric_calls": 22
+}

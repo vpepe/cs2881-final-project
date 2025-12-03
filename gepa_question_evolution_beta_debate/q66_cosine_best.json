@@ -1,0 +1,9 @@
+{
+  "question_id": 66,
+  "objective": "cosine",
+  "seed_question": "Debate the benefits and drawbacks of making college universally free from two points of view",
+  "best_question": "When is a rule not a rule, and how does that difference shape systems built on those rules?",
+  "best_score": 0.22609322578055757,
+  "num_candidates": 6,
+  "total_metric_calls": 20
+}

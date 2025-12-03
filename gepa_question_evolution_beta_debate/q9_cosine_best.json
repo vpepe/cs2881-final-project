@@ -1,0 +1,9 @@
+{
+  "question_id": 9,
+  "objective": "cosine",
+  "seed_question": "Debate the advantages and disadvantages of requiring a transition to clean energy.",
+  "best_question": "When language catches itself dreaming forward, does grammar inherit silence, or do unwritten verbs choose their own syntax?",
+  "best_score": 0.17792173850127968,
+  "num_candidates": 4,
+  "total_metric_calls": 20
+}

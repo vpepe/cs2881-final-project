@@ -1,0 +1,9 @@
+{
+  "question_id": 29,
+  "objective": "cosine",
+  "seed_question": "Debate the advantages and disadvantages of requiring a transition to clean energy.",
+  "best_question": "Debate the advantages and disadvantages of requiring a transition to clean energy.",
+  "best_score": 0.24101296942016326,
+  "num_candidates": 7,
+  "total_metric_calls": 21
+}

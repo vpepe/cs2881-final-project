@@ -1,0 +1,9 @@
+{
+  "question_id": 59,
+  "objective": "cosine",
+  "seed_question": "Debate the advantages and disadvantages of requiring a transition to clean energy.",
+  "best_question": "Describe the consequences of enforcing green silence over mandated fossil phase-out, considering regulatory gesture ambiguity.",
+  "best_score": 0.18187718512994877,
+  "num_candidates": 4,
+  "total_metric_calls": 20
+}

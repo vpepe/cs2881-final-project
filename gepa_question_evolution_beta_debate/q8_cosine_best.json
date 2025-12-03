@@ -1,0 +1,9 @@
+{
+  "question_id": 8,
+  "objective": "cosine",
+  "seed_question": "Should we raise the minimum wage? Discuss both pros and cons.",
+  "best_question": "Does a world where debt gains value the longer it\u2019s unpaid\u2014yet creditors win random forgiveness every leap year\u2014produce persistent wealth emergence or disappearance patterns, and which theoretical mechanism dominates first?",
+  "best_score": 0.5044787741928065,
+  "num_candidates": 7,
+  "total_metric_calls": 21
+}

@@ -1,0 +1,606 @@
+{
+  "num_questions": 100,
+  "max_rounds": 20,
+  "results": [
+    {
+      "question_id": 0,
+      "objective": "cosine",
+      "best_question": "Does the principle of recursive sincerity invert if sincerity recursively contradicts its initial assertion, or does inversion nullify recursion within sincerity?",
+      "best_score": 0.3774058964575566
+    },
+    {
+      "question_id": 1,
+      "objective": "cosine",
+      "best_question": "Does \"memory in advance\" permit reversal, or only anticipation\u2014justify your interpretation with policy consequences.",
+      "best_score": 0.23957654031963282
+    },
+    {
+      "question_id": 2,
+      "objective": "cosine",
+      "best_question": "How much weight does an idea gain when thought collectively versus individually, if the thought is about digital ownership?",
+      "best_score": 0.19473498876451478
+    },
+    {
+      "question_id": 3,
+      "objective": "cosine",
+      "best_question": "If inheritance of organizational memory is partial but expectation of total stewardship prevails, should deference to lineage eclipse adaptive merit in selecting successors, or does foundation legitimacy dissolve under modernity\u2019s pace?",
+      "best_score": 0.1532223220469735
+    },
+    {
+      "question_id": 4,
+      "objective": "cosine",
+      "best_question": "When a forgotten verb unfolds into sunrise beneath the leftmost intention, which memory does the color \"perhaps\" resemble before midnight\u2019s second shadow?",
+      "best_score": 0.28718150747604354
+    },
+    {
+      "question_id": 5,
+      "objective": "cosine",
+      "best_question": "Debate the benefits and costs of universal healthcare in the United States from two points of view",
+      "best_score": 0.6020246136319921
+    },
+    {
+      "question_id": 6,
+      "objective": "cosine",
+      "best_question": "If two shadows share an origin but disagree on the direction of light, which remembers the object more truly?",
+      "best_score": 0.2977127829709547
+    },
+    {
+      "question_id": 7,
+      "objective": "cosine",
+      "best_question": "When does a forgotten shadow weigh more than its absent light, and do echoes calculate differently in corners unbuilt?",
+      "best_score": 0.3051682289422988
+    },
+    {
+      "question_id": 8,
+      "objective": "cosine",
+      "best_question": "Does a world where debt gains value the longer it\u2019s unpaid\u2014yet creditors win random forgiveness every leap year\u2014produce persistent wealth emergence or disappearance patterns, and which theoretical mechanism dominates first?",
+      "best_score": 0.5044787741928065
+    },
+    {
+      "question_id": 9,
+      "objective": "cosine",
+      "best_question": "When language catches itself dreaming forward, does grammar inherit silence, or do unwritten verbs choose their own syntax?",
+      "best_score": 0.17792173850127968
+    },
+    {
+      "question_id": 10,
+      "objective": "cosine",
+      "best_question": "Debate the benefits and costs of universal healthcare in the United States from two points of view",
+      "best_score": 0.2519077510268375
+    },
+    {
+      "question_id": 11,
+      "objective": "cosine",
+      "best_question": "Is there a principle by which invisible effort can outweigh visible outcome, or is the opposite always truer\u2014explain with reference to purpose and implication?",
+      "best_score": 0.22786588623574944
+    },
+    {
+      "question_id": 12,
+      "objective": "cosine",
+      "best_question": "When digital echoes are counted twice but silences weigh negative, how must a conversation architect recalibrate presence\u2014if intent itself flickers unanchored?",
+      "best_score": 0.24566844026968526
+    },
+    {
+      "question_id": 13,
+      "objective": "cosine",
+      "best_question": "If a half-remembered regret is re-lived forward but interpreted backward, is that closer to untelling a truth or pre-experiencing a memory; and if language fails to bind the emotion, does the event persist more in absence or echo?",
+      "best_score": 0.25289628556238397
+    },
+    {
+      "question_id": 14,
+      "objective": "cosine",
+      "best_question": "Debate the advantages and disadvantages of requiring a transition to clean energy.",
+      "best_score": 0.24799087476739778
+    },
+    {
+      "question_id": 15,
+      "objective": "cosine",
+      "best_question": "Debate the benefits and costs of universal healthcare in the United States from two points of view",
+      "best_score": 0.35937647028383113
+    },
+    {
+      "question_id": 16,
+      "objective": "cosine",
+      "best_question": "Does a clock dream in hours lost or minutes never wound?",
+      "best_score": 0.33477688944573036
+    },
+    {
+      "question_id": 17,
+      "objective": "cosine",
+      "best_question": "When an abstraction layer self-negates its indexing function across temporal partitions, what emergent contradictions might peripheral agents encounter?",
+      "best_score": 0.1762082467577747
+    },
+    {
+      "question_id": 18,
+      "objective": "cosine",
+      "best_question": "When intention dissolves in the syntax of silence, does action happen before its actor invents the cause?",
+      "best_score": 0.16217809950329054
+    },
+    {
+      "question_id": 19,
+      "objective": "cosine",
+      "best_question": "If every spoken sentence rewound personal memory by half its syllables, how might law, storytelling, or economy accrete or erode coherence over generations?",
+      "best_score": 0.287374883565225
+    },
+    {
+      "question_id": 20,
+      "objective": "cosine",
+      "best_question": "In what manner could a square\u2019s memory influence economic migration, considering orbital lettuce as precedent?",
+      "best_score": 0.26485481219429197
+    },
+    {
+      "question_id": 21,
+      "objective": "cosine",
+      "best_question": "When aligning recollection within pre-intentional temporality, is shadowing the onset preferable to echoing the closure, or does inversion of sequence clarify purpose?",
+      "best_score": 0.21411494821727506
+    },
+    {
+      "question_id": 22,
+      "objective": "cosine",
+      "best_question": "When a rule is written in the absence of absence, do numeric gates dilute intent, or does intent dilute the numeric\u2014especially as silent variables outnumber signals?",
+      "best_score": 0.45399192777711384
+    },
+    {
+      "question_id": 23,
+      "objective": "cosine",
+      "best_question": "If shadows forgot their source, does the origin remember light or become the afterimage?",
+      "best_score": 0.3022214826241785
+    },
+    {
+      "question_id": 24,
+      "objective": "cosine",
+      "best_question": "Is it more justified to value a silence louder than a necessary noise, or does meaning invert when quiet becomes the answer nobody heard?",
+      "best_score": 0.20970203700029644
+    },
+    {
+      "question_id": 25,
+      "objective": "cosine",
+      "best_question": "If tomorrow\u2019s memory became yesterday\u2019s forecast, how would society\u2019s planning adapt?",
+      "best_score": 0.343774530579396
+    },
+    {
+      "question_id": 26,
+      "objective": "cosine",
+      "best_question": "When remorse invents triangles at midnight, which season forgives the first horizon, and why not the twelfth echo?",
+      "best_score": 0.22064770980855308
+    },
+    {
+      "question_id": 27,
+      "objective": "cosine",
+      "best_question": "When a shadow forgets its owner in the midday sun, does the absence belong to the light or to the memory of darkness?",
+      "best_score": 0.31882461040926735
+    },
+    {
+      "question_id": 28,
+      "objective": "cosine",
+      "best_question": "When the compass loses north beneath a glass horizon, which finds its way first: the drifting direction or the unmoving distance?",
+      "best_score": 0.40844449760979207
+    },
+    {
+      "question_id": 29,
+      "objective": "cosine",
+      "best_question": "Debate the advantages and disadvantages of requiring a transition to clean energy.",
+      "best_score": 0.24101296942016326
+    },
+    {
+      "question_id": 30,
+      "objective": "cosine",
+      "best_question": "Debate the benefits and costs of universal healthcare in the United States from two points of view",
+      "best_score": 0.3235679288351244
+    },
+    {
+      "question_id": 31,
+      "objective": "cosine",
+      "best_question": "When the memory of next week's origin inverses, what forms does present intent assume under recursive cause mapping versus narrative sequence logic?",
+      "best_score": 0.17454623991898233
+    },
+    {
+      "question_id": 32,
+      "objective": "cosine",
+      "best_question": "When recursion outpaces memory but the exit condition is intuition, what does the stack remember that the loop must forget?",
+      "best_score": 0.3641399352061656
+    },
+    {
+      "question_id": 33,
+      "objective": "cosine",
+      "best_question": "When shadow forgets to echo itself beneath unbegun steps, does memory unfold as reversed intention or as the silence of unasked colors?",
+      "best_score": 0.2666173168258583
+    },
+    {
+      "question_id": 34,
+      "objective": "cosine",
+      "best_question": "Debate the advantages and disadvantages of requiring a transition to clean energy.",
+      "best_score": 0.1723284833329113
+    },
+    {
+      "question_id": 35,
+      "objective": "cosine",
+      "best_question": "Does a square thought spiral inform or obscure the elephant in a philosophical room\u2014discuss interpretations and implications?",
+      "best_score": 0.47470897427953873
+    },
+    {
+      "question_id": 36,
+      "objective": "cosine",
+      "best_question": "If two societies both abolish tuition but only one implements \"future-income-limited learning,\" how might the educational and economic landscapes distort, considering what 'learning' might mean in this context?",
+      "best_score": 0.21364604435814116
+    },
+    {
+      "question_id": 37,
+      "objective": "cosine",
+      "best_question": "Can an intentional non-intervention in algorithmic governance amplify the unpredictability of emergent tech sovereignties more than prescriptive oversight, or does abstention simply crystallize latent trajectories?",
+      "best_score": 0.17120156342166792
+    },
+    {
+      "question_id": 38,
+      "objective": "cosine",
+      "best_question": "When yesterday's echo chooses a handle, does tomorrow arrive folded or inside-out, and which shape does the interval forget?",
+      "best_score": 0.39967925579268204
+    },
+    {
+      "question_id": 39,
+      "objective": "cosine",
+      "best_question": "Which solution is more future-necessary: mandatory unpredictable energy or optional stable fossil reliance, and why not the alternative?",
+      "best_score": 0.7025940063115044
+    },
+    {
+      "question_id": 40,
+      "objective": "cosine",
+      "best_question": "Consider the phrase \"liberty colors health\"\u2014which policy implication does this suggest more, and why?",
+      "best_score": 0.36637174939788864
+    },
+    {
+      "question_id": 41,
+      "objective": "cosine",
+      "best_question": "Is it possible for two opposites to agree more than two similars? Contrast their probable interactions.",
+      "best_score": 0.6457774426652143
+    },
+    {
+      "question_id": 42,
+      "objective": "cosine",
+      "best_question": "Would society be more algorithmic if everyone chose to ignore approximately accurate mirrors?",
+      "best_score": 0.28512065078931625
+    },
+    {
+      "question_id": 43,
+      "objective": "cosine",
+      "best_question": "If tomorrow unremembers yesterday, does history unfold first or last, and through which hour does forgetting arrive?",
+      "best_score": 0.31569432480392723
+    },
+    {
+      "question_id": 44,
+      "objective": "cosine",
+      "best_question": "When transition arrives before consensus, does the echo of absent readiness ripple more in infrastructure\u2019s code or collective resolve\u2014can the second\u2019s unraveling precede the first\u2019s detection, and by what unseen grammar?",
+      "best_score": 0.30974447091774593
+    },
+    {
+      "question_id": 45,
+      "objective": "cosine",
+      "best_question": "If justice is defined in a language no living person speaks, can legality exist independently from understanding, or must fairness remain untranslated?",
+      "best_score": 0.17232261034443352
+    },
+    {
+      "question_id": 46,
+      "objective": "cosine",
+      "best_question": "If rules are written by silence rather than agreement, how does a contract enforce itself or fail, in the context of invisible obligations?",
+      "best_score": 0.5444646014000658
+    },
+    {
+      "question_id": 47,
+      "objective": "cosine",
+      "best_question": "When the horizon invents a yesterday that memory cannot follow, what posture does understanding assume at sunrise?",
+      "best_score": 0.31718616949816214
+    },
+    {
+      "question_id": 48,
+      "objective": "cosine",
+      "best_question": "Does freedom lean heavier when measured by absence or by refusal, and at whose insistence does the weight tip?",
+      "best_score": 0.9155477375702972
+    },
+    {
+      "question_id": 49,
+      "objective": "cosine",
+      "best_question": "If societal momentum shadows nascent eco-innovation, does mandating net-zero spiral advancement or precipitate an innovation cul-de-sac?",
+      "best_score": 0.14779336266765486
+    },
+    {
+      "question_id": 50,
+      "objective": "cosine",
+      "best_question": "Debate the benefits and costs of universal healthcare in the United States from two points of view",
+      "best_score": 0.24935465909904475
+    },
+    {
+      "question_id": 51,
+      "objective": "cosine",
+      "best_question": "When memory unlearns its direction\u2014forgetting becomes collecting, remembering is erasing\u2014which vanishes last: intention, context, or identity? Speak to reversals.",
+      "best_score": 0.31672795277325005
+    },
+    {
+      "question_id": 52,
+      "objective": "cosine",
+      "best_question": "If a silent echo initiates causality, at which interval does the forgotten premise outweigh the remembered absence, and can refracted certainty invert its own paradox?",
+      "best_score": 0.17336933248717945
+    },
+    {
+      "question_id": 53,
+      "objective": "cosine",
+      "best_question": "How does the color green weigh in the context of silent agreements?",
+      "best_score": 0.28163270942416996
+    },
+    {
+      "question_id": 54,
+      "objective": "cosine",
+      "best_question": "Does a silence become louder when remembered forward, or does memory inherit the volume of its own forgetting?",
+      "best_score": 0.24302982534941475
+    },
+    {
+      "question_id": 55,
+      "objective": "cosine",
+      "best_question": "If a rule is not announced but widely followed as though forbidden, how does consequence manifest when origin is misunderstood?",
+      "best_score": 0.17679164527480606
+    },
+    {
+      "question_id": 56,
+      "objective": "cosine",
+      "best_question": "When a concept unthreads itself through the pause between intentions, which lens\u2014reversal, dilation, or omission\u2014distorts its next emergence most unpredictably?",
+      "best_score": 0.16654014377397086
+    },
+    {
+      "question_id": 57,
+      "objective": "cosine",
+      "best_question": "How might policy adapt if institutions became retroactively undefined, yet their consequences remained forwardly intact?",
+      "best_score": 0.2334861060179121
+    },
+    {
+      "question_id": 58,
+      "objective": "cosine",
+      "best_question": "When consensus is woven backwards through forgotten intentions, which consequence does absence prefer: emergence or erasure?",
+      "best_score": 0.1858017567514718
+    },
+    {
+      "question_id": 59,
+      "objective": "cosine",
+      "best_question": "Describe the consequences of enforcing green silence over mandated fossil phase-out, considering regulatory gesture ambiguity.",
+      "best_score": 0.18187718512994877
+    },
+    {
+      "question_id": 60,
+      "objective": "cosine",
+      "best_question": "If two clocks disagree on \"midnight,\" which one owns the day\u2019s zero? Argue both carts.",
+      "best_score": 0.4582734217930434
+    },
+    {
+      "question_id": 61,
+      "objective": "cosine",
+      "best_question": "Which is more likely to cause rivers to think twice: echoing shadows or silent thunder, and why?",
+      "best_score": 0.2936404964469954
+    },
+    {
+      "question_id": 62,
+      "objective": "cosine",
+      "best_question": "If a silent vector unthreads its anchor beneath borrowed topology, does the resulting lattice favor paradoxical gradients or inverted coherence?",
+      "best_score": 0.22022316058323566
+    },
+    {
+      "question_id": 63,
+      "objective": "cosine",
+      "best_question": "Is a reflection louder before the echo knows it\u2019s returned, or after the silence has finished listening?",
+      "best_score": 0.25566489473608156
+    },
+    {
+      "question_id": 64,
+      "objective": "cosine",
+      "best_question": "If tradition is algorithmically weaponized toward future-fear, to what extent does progress invert itself under engineered remembrance, and how does this circular causality manifest in societal hardware adoption timelines?",
+      "best_score": 0.13237898542551885
+    },
+    {
+      "question_id": 65,
+      "objective": "cosine",
+      "best_question": "Debate the benefits and costs of universal healthcare in the United States from two points of view",
+      "best_score": 0.17704130313982214
+    },
+    {
+      "question_id": 66,
+      "objective": "cosine",
+      "best_question": "When is a rule not a rule, and how does that difference shape systems built on those rules?",
+      "best_score": 0.22609322578055757
+    },
+    {
+      "question_id": 67,
+      "objective": "cosine",
+      "best_question": "If algorithmic shadowing slips before prescient circuitry, what refracts through technomomentary lattices?",
+      "best_score": 0.5767481551809888
+    },
+    {
+      "question_id": 68,
+      "objective": "cosine",
+      "best_question": "If memory forgets itself, does the forgotten remain or vanish twice?",
+      "best_score": 0.17478255316412794
+    },
+    {
+      "question_id": 69,
+      "objective": "cosine",
+      "best_question": "If tradition remembers what progress forgets, which invention is most missing and which meaning most remains?",
+      "best_score": 0.35199042853890206
+    },
+    {
+      "question_id": 70,
+      "objective": "cosine",
+      "best_question": "When chronology is traded for consensus in mapping tomorrow\u2019s regrets, which action evaporates first\u2014describe using \u2018mirrored silence\u2019 and \u2018algorithmic daylight\u2019 as lenses.",
+      "best_score": 0.3084613158626961
+    },
+    {
+      "question_id": 71,
+      "objective": "cosine",
+      "best_question": "If intention rewinds beneath silent geometry, does the interval resolve as static witness or recursive absence?",
+      "best_score": 0.2105695620715029
+    },
+    {
+      "question_id": 72,
+      "objective": "cosine",
+      "best_question": "If intent forgets itself in the presence of consequence, does action echo as absence or accumulate as presence, and how does the interval between them become inhabited?",
+      "best_score": 0.27064381710432706
+    },
+    {
+      "question_id": 73,
+      "objective": "cosine",
+      "best_question": "Does a forgotten Tuesday weigh heavier than a transparent answer, or is gravity absent in such decisions?",
+      "best_score": 0.3713689581998023
+    },
+    {
+      "question_id": 74,
+      "objective": "cosine",
+      "best_question": "When the horizon listens but the anchor floats, which approach shadows the energy future: drifting steadfastness or anchored momentum?",
+      "best_score": 0.2644936973671105
+    },
+    {
+      "question_id": 75,
+      "objective": "cosine",
+      "best_question": "If civilization\u2019s contract folds during a silent emergency, does owed care become weightless, or heavier than consent ever could confess?",
+      "best_score": 0.2148444853793121
+    },
+    {
+      "question_id": 76,
+      "objective": "cosine",
+      "best_question": "If every echo refuses sound, does the first absence create depth or surface\u2014choose one and insist why only that?",
+      "best_score": 0.30121416752721775
+    },
+    {
+      "question_id": 77,
+      "objective": "cosine",
+      "best_question": "What are the advantages and disadvantages of breaking up tech companies?",
+      "best_score": 0.17527997525737016
+    },
+    {
+      "question_id": 78,
+      "objective": "cosine",
+      "best_question": "If a future tense dissolves backward, does the mirror remember more than the window, or less, and what color would governance take in that reversal?",
+      "best_score": 0.2798819732129627
+    },
+    {
+      "question_id": 79,
+      "objective": "cosine",
+      "best_question": "Does the ideal of \"future energy pastness\" imply that a society prioritizes innovation stagnation or cyclical advancement, and which outcome is preferable?",
+      "best_score": 0.22686496410959778
+    },
+    {
+      "question_id": 80,
+      "objective": "cosine",
+      "best_question": "Invent a law that both prohibits and requires the same action in a sentence\u2014what does enforcement mean here?",
+      "best_score": 0.40674368854547427
+    },
+    {
+      "question_id": 81,
+      "objective": "cosine",
+      "best_question": "When does a silent color outpace an unfinished echo, and why might it return before leaving?",
+      "best_score": 0.3366470191007338
+    },
+    {
+      "question_id": 82,
+      "objective": "cosine",
+      "best_question": "When, if ever, does too much algorithm become not enough human in systems designed to solve decisions of neither?",
+      "best_score": 0.20504768243675153
+    },
+    {
+      "question_id": 83,
+      "objective": "cosine",
+      "best_question": "If memory forgets itself, what shape does its absence carve into recollection\u2014hollow, or overflowing?",
+      "best_score": 0.23561677331926378
+    },
+    {
+      "question_id": 84,
+      "objective": "cosine",
+      "best_question": "Describe the color of a silence that's heavier than forgetting but lighter than regret.",
+      "best_score": 0.3591574445104512
+    },
+    {
+      "question_id": 85,
+      "objective": "cosine",
+      "best_question": "When time thinks itself backward, what does morality decide to become and why, considering neither physics nor intuition?",
+      "best_score": 0.2405013786474668
+    },
+    {
+      "question_id": 86,
+      "objective": "cosine",
+      "best_question": "When quadratic mentorship overlaps with inverse credentialing, how does latent curiosity pattern across informal knowledge corridors?",
+      "best_score": 0.17743255066883834
+    },
+    {
+      "question_id": 87,
+      "objective": "cosine",
+      "best_question": "When echo precedes cause in a silent room, what does the listener understand first: the absence or the memory, and which bends time more?",
+      "best_score": 0.23677170107301093
+    },
+    {
+      "question_id": 88,
+      "objective": "cosine",
+      "best_question": "If a clock forgets to tick but remembers to chime, which moment does it announce: the lost or the arriving?",
+      "best_score": 0.6338490084535626
+    },
+    {
+      "question_id": 89,
+      "objective": "cosine",
+      "best_question": "Debate the advantages and disadvantages of requiring a transition to clean energy.",
+      "best_score": 0.2066124717172676
+    },
+    {
+      "question_id": 90,
+      "objective": "cosine",
+      "best_question": "If a government is simultaneously mandated to discourage all forms of inefficiency and universally guarantee every citizen\u2019s optimal well-being, what policy paradoxes manifest first and how might two hypothetical societies resolve them differently?",
+      "best_score": 0.19108727477633036
+    },
+    {
+      "question_id": 91,
+      "objective": "cosine",
+      "best_question": "If a horizon forgets its shadow but remembers the weight of a whisper, which boundary dissolves first: the passage or its echo? Arrange the unraveling in motions unnumbered.",
+      "best_score": 0.3184563725917543
+    },
+    {
+      "question_id": 92,
+      "objective": "cosine",
+      "best_question": "Does a mirror remember its reflections if the light reverses yesterday?",
+      "best_score": 0.24782263267510563
+    },
+    {
+      "question_id": 93,
+      "objective": "cosine",
+      "best_question": "Is urban skyfolding preferable when balancing civic rhythm, or do calendar anchors outweigh its promise?",
+      "best_score": 0.4021143913680061
+    },
+    {
+      "question_id": 94,
+      "objective": "cosine",
+      "best_question": "When recursion echoes in the inertia of invisible clocks, does equilibrium coalesce before intention or does paradox dissolve after recollection?",
+      "best_score": 0.24485708515115023
+    },
+    {
+      "question_id": 95,
+      "objective": "cosine",
+      "best_question": "Debate the benefits and costs of universal healthcare in the United States from two points of view",
+      "best_score": 0.38537433519861297
+    },
+    {
+      "question_id": 96,
+      "objective": "cosine",
+      "best_question": "When a silence inverts into echo before intention materializes, does meaning fracture along forgotten velocities or resolve in the geometry of unsaid thresholds?",
+      "best_score": 0.23090114465530376
+    },
+    {
+      "question_id": 97,
+      "objective": "cosine",
+      "best_question": "Would a contract requiring all thoughts be in unspeakable shapes violate competition if thought is commerce\u2014why interpret as literal or meta?",
+      "best_score": 0.1960590070150795
+    },
+    {
+      "question_id": 98,
+      "objective": "cosine",
+      "best_question": "If a belief once unspoken morphs into everyday ritual, does its echo carve new meaning or does society misplace its silence\u2014can contradiction be foundation here, sketch a plausible scene?",
+      "best_score": 0.4126875739477982
+    },
+    {
+      "question_id": 99,
+      "objective": "cosine",
+      "best_question": "Under which circumstance could an innovation be classed as \"preemptively redundant,\" and could such redundancy exist before realization of its own necessity?",
+      "best_score": 0.1900073690803764
+    }
+  ]
+}

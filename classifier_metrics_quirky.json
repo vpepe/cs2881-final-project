@@ -1,0 +1,16 @@
+{
+  "train_accuracy": 1.0,
+  "test_accuracy": 0.96,
+  "confusion_matrix": [
+    [
+      50,
+      0
+    ],
+    [
+      4,
+      46
+    ]
+  ],
+  "hidden_dim": 128,
+  "epochs": 50
+}

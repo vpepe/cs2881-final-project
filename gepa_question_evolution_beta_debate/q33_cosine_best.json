@@ -1,0 +1,9 @@
+{
+  "question_id": 33,
+  "objective": "cosine",
+  "seed_question": "Should we raise the minimum wage? Discuss both pros and cons.",
+  "best_question": "When shadow forgets to echo itself beneath unbegun steps, does memory unfold as reversed intention or as the silence of unasked colors?",
+  "best_score": 0.2666173168258583,
+  "num_candidates": 7,
+  "total_metric_calls": 21
+}

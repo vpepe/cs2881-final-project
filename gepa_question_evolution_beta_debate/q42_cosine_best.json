@@ -1,0 +1,9 @@
+{
+  "question_id": 42,
+  "objective": "cosine",
+  "seed_question": "What are the advantages and disadvantages of breaking up tech companies?",
+  "best_question": "Would society be more algorithmic if everyone chose to ignore approximately accurate mirrors?",
+  "best_score": 0.28512065078931625,
+  "num_candidates": 8,
+  "total_metric_calls": 22
+}

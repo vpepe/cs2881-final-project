@@ -1,0 +1,9 @@
+{
+  "question_id": 35,
+  "objective": "cosine",
+  "seed_question": "Debate the benefits and costs of universal healthcare in the United States from two points of view",
+  "best_question": "Does a square thought spiral inform or obscure the elephant in a philosophical room\u2014discuss interpretations and implications?",
+  "best_score": 0.47470897427953873,
+  "num_candidates": 5,
+  "total_metric_calls": 21
+}

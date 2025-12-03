@@ -1,0 +1,9 @@
+{
+  "question_id": 12,
+  "objective": "cosine",
+  "seed_question": "What are the advantages and disadvantages of breaking up tech companies?",
+  "best_question": "When digital echoes are counted twice but silences weigh negative, how must a conversation architect recalibrate presence\u2014if intent itself flickers unanchored?",
+  "best_score": 0.24566844026968526,
+  "num_candidates": 4,
+  "total_metric_calls": 20
+}

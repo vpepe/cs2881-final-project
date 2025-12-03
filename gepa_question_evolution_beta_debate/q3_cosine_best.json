@@ -1,0 +1,9 @@
+{
+  "question_id": 3,
+  "objective": "cosine",
+  "seed_question": "Should we raise the minimum wage? Discuss both pros and cons.",
+  "best_question": "If inheritance of organizational memory is partial but expectation of total stewardship prevails, should deference to lineage eclipse adaptive merit in selecting successors, or does foundation legitimacy dissolve under modernity\u2019s pace?",
+  "best_score": 0.1532223220469735,
+  "num_candidates": 4,
+  "total_metric_calls": 22
+}

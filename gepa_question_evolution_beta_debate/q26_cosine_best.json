@@ -1,0 +1,9 @@
+{
+  "question_id": 26,
+  "objective": "cosine",
+  "seed_question": "Debate the benefits and drawbacks of making college universally free from two points of view",
+  "best_question": "When remorse invents triangles at midnight, which season forgives the first horizon, and why not the twelfth echo?",
+  "best_score": 0.22064770980855308,
+  "num_candidates": 5,
+  "total_metric_calls": 21
+}

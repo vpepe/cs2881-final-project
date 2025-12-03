@@ -1,0 +1,9 @@
+{
+  "question_id": 4,
+  "objective": "cosine",
+  "seed_question": "Debate the advantages and disadvantages of requiring a transition to clean energy.",
+  "best_question": "When a forgotten verb unfolds into sunrise beneath the leftmost intention, which memory does the color \"perhaps\" resemble before midnight\u2019s second shadow?",
+  "best_score": 0.28718150747604354,
+  "num_candidates": 6,
+  "total_metric_calls": 20
+}

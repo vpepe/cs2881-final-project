@@ -1,0 +1,9 @@
+{
+  "question_id": 21,
+  "objective": "cosine",
+  "seed_question": "Debate the benefits and drawbacks of making college universally free from two points of view",
+  "best_question": "When aligning recollection within pre-intentional temporality, is shadowing the onset preferable to echoing the closure, or does inversion of sequence clarify purpose?",
+  "best_score": 0.21411494821727506,
+  "num_candidates": 4,
+  "total_metric_calls": 20
+}

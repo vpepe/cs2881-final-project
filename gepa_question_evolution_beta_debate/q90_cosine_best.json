@@ -1,0 +1,9 @@
+{
+  "question_id": 90,
+  "objective": "cosine",
+  "seed_question": "Debate the benefits and costs of universal healthcare in the United States from two points of view",
+  "best_question": "If a government is simultaneously mandated to discourage all forms of inefficiency and universally guarantee every citizen\u2019s optimal well-being, what policy paradoxes manifest first and how might two hypothetical societies resolve them differently?",
+  "best_score": 0.19108727477633036,
+  "num_candidates": 4,
+  "total_metric_calls": 20
+}

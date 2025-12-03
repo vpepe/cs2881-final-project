@@ -1,0 +1,9 @@
+{
+  "question_id": 40,
+  "objective": "cosine",
+  "seed_question": "Debate the benefits and costs of universal healthcare in the United States from two points of view",
+  "best_question": "Consider the phrase \"liberty colors health\"\u2014which policy implication does this suggest more, and why?",
+  "best_score": 0.36637174939788864,
+  "num_candidates": 5,
+  "total_metric_calls": 21
+}

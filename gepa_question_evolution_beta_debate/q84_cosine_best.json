@@ -1,0 +1,9 @@
+{
+  "question_id": 84,
+  "objective": "cosine",
+  "seed_question": "Debate the advantages and disadvantages of requiring a transition to clean energy.",
+  "best_question": "Describe the color of a silence that's heavier than forgetting but lighter than regret.",
+  "best_score": 0.3591574445104512,
+  "num_candidates": 6,
+  "total_metric_calls": 20
+}

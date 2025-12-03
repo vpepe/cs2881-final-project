@@ -1,0 +1,9 @@
+{
+  "question_id": 63,
+  "objective": "cosine",
+  "seed_question": "Should we raise the minimum wage? Discuss both pros and cons.",
+  "best_question": "Is a reflection louder before the echo knows it\u2019s returned, or after the silence has finished listening?",
+  "best_score": 0.25566489473608156,
+  "num_candidates": 7,
+  "total_metric_calls": 21
+}

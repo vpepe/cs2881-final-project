@@ -1,0 +1,9 @@
+{
+  "question_id": 22,
+  "objective": "cosine",
+  "seed_question": "What are the advantages and disadvantages of breaking up tech companies?",
+  "best_question": "When a rule is written in the absence of absence, do numeric gates dilute intent, or does intent dilute the numeric\u2014especially as silent variables outnumber signals?",
+  "best_score": 0.45399192777711384,
+  "num_candidates": 4,
+  "total_metric_calls": 20
+}

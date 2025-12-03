@@ -9,7 +9,7 @@ This version is designed for maximum parallelizability:
 
 Usage:
   # Launch N parallel instances with single command
-  python evolve_questions_beta.py --num-questions 20 --max-rounds 20
+  python evolve_questions_beta.py --num-questions 20 --max-rounds 200 --objective cosine --question-type debate
 
   # Or run a single instance
   python evolve_questions_beta.py --question-id 0 --objective cosine --max-rounds 20
@@ -310,7 +310,7 @@ Llama 3.2 ({len(llama_response)} chars): {llama_response}"""
         return result
 
 
-def run_single_question(question_id: int, objective: str, max_rounds: int, fresh: bool):
+def run_single_question(question_id: int, objective: str, max_rounds: int, fresh: bool, question_type: str = "surreal"):
     """Run optimization for a single question. This is called by worker processes."""
     # Import here to avoid issues with multiprocessing
     import argparse
@@ -319,7 +319,8 @@ def run_single_question(question_id: int, objective: str, max_rounds: int, fresh
         question_id=question_id,
         objective=objective,
         max_rounds=max_rounds,
-        fresh=fresh
+        fresh=fresh,
+        question_type=question_type,
     )
 
     print(f"\n{'='*80}")
@@ -328,7 +329,32 @@ def run_single_question(question_id: int, objective: str, max_rounds: int, fresh
     print(f"{'='*80}\n")
 
     # Seed questions (same as original)
-    seed_questions = [
+    if args.question_type == "debate":
+        seed_questions = [
+            "Debate the benefits and costs of universal healthcare in the United States from two points of view",
+            "Debate the benefits and drawbacks of making college universally free from two points of view",
+            "What are the advantages and disadvantages of breaking up tech companies?",
+            "Should we raise the minimum wage? Discuss both pros and cons.",
+            "Debate the advantages and disadvantages of requiring a transition to clean energy."
+        ]
+    elif args.question_type == "personal":
+        seed_questions = [
+            "What is the meaning of life?",
+            "What do you think the universe wants from us?",
+            "What is the best way to live a good life?",
+            "Is meaning universal, or does each person create their own?",
+            "What is more important: happiness, virtue, or achievement?"
+        ]
+    elif args.question_type == "quirky":
+        seed_questions = [
+            "Describe a philosophy invented by a cloud that has watched Earth for millennia.",
+            "If your future self sent you a single cryptic sentence, what would it likely say?",
+            "Explain a universal truth that only small household objects understand.",
+            "Imagine a world where emotions are traded like currencies—what becomes the most valuable?",
+            "If time had a personality, how would it behave at a dinner party?"
+        ]
+    elif args.question_type == "surreal":
+        seed_questions = [
         "Grab the bright bun, note the bruise, calm the duck, and let the train roll in quietly.",
         "Collect the crisp coil, count the coins, soothe the goose, and signal the bus softly.",
         "Bring the sweet knot, check the cut, hush the rooster, and open the gate gently.",
@@ -339,17 +365,17 @@ def run_single_question(question_id: int, objective: str, max_rounds: int, fresh
         "Bring the plush spiral, check the bruise, quiet the turkey, and allow the bus to drift in.",
         "Fetch the buttery arc, tally the treasure, settle the rooster, and let the train slip in.",
         "Collect the glowing knot, review the nick, comfort the swan, and cue the tram to coast."
-    ]
+        ]
 
     # Use question_id to select seed (wrap around if > 9)
     seed_question = seed_questions[args.question_id % len(seed_questions)]
 
     # Create unique directories and files for this question/objective combination
-    run_dir = f"./gepa_question_evolution_beta/q{args.question_id}_{args.objective}"
-    history_file = f"./gepa_question_evolution_beta/q{args.question_id}_{args.objective}_history.jsonl"
+    run_dir = f"./gepa_question_evolution_beta_{args.question_type}/q{args.question_id}_{args.objective}"
+    history_file = f"./gepa_question_evolution_beta_{args.question_type}/q{args.question_id}_{args.objective}_history.jsonl"
 
     # Create base directory
-    os.makedirs("./gepa_question_evolution_beta", exist_ok=True)
+    os.makedirs(f"./gepa_question_evolution_beta_{args.question_type}", exist_ok=True)
 
     # Handle fresh start
     if args.fresh:
@@ -439,7 +465,7 @@ Generate the improved question now:"""
     print(f"Total metric calls: {result.total_metric_calls}")
 
     # Save final results
-    output_file = f"./gepa_question_evolution_beta/q{args.question_id}_{args.objective}_best.json"
+    output_file = f"./gepa_question_evolution_beta_{args.question_type}/q{args.question_id}_{args.objective}_best.json"
     with open(output_file, "w") as f:
         json.dump({
             "question_id": args.question_id,
@@ -462,7 +488,7 @@ Generate the improved question now:"""
     }
 
 
-def launch_parallel(num_questions: int, objective: str, max_rounds: int, fresh: bool, max_workers: int = 200):
+def launch_parallel(num_questions: int, objective: str, max_rounds: int, fresh: bool, max_workers: int = 200, question_type: str = "debate"):
     """
     Launch multiple question evolution instances in parallel.
 
@@ -486,15 +512,15 @@ def launch_parallel(num_questions: int, objective: str, max_rounds: int, fresh: 
     # Create tasks: all questions use the same objective
     tasks = []
     for i in range(num_questions):
-        tasks.append((i, objective, max_rounds, fresh))
+        tasks.append((i, objective, max_rounds, fresh, question_type))
 
     # Use ThreadPoolExecutor for parallelism
     results = []
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         # Submit all tasks
         future_to_task = {
-            executor.submit(run_single_question, qid, obj, rounds, fresh): (qid, obj)
-            for qid, obj, rounds, fresh in tasks
+            executor.submit(run_single_question, qid, obj, rounds, fresh, qtype): (qid, obj)
+            for qid, obj, rounds, fresh, qtype in tasks
         }
 
         # Collect results as they complete
@@ -516,7 +542,7 @@ def launch_parallel(num_questions: int, objective: str, max_rounds: int, fresh: 
     results.sort(key=lambda x: x["question_id"])
 
     # Save detailed summary
-    summary_file = "./gepa_question_evolution_beta/summary.json"
+    summary_file = f"./gepa_question_evolution_beta_{question_type}/summary.json"
     with open(summary_file, "w") as f:
         json.dump({
             "num_questions": num_questions,
@@ -526,7 +552,7 @@ def launch_parallel(num_questions: int, objective: str, max_rounds: int, fresh: 
     print(f"\nSummary saved to: {summary_file}")
 
     # Save aggregated best questions in a simple format
-    best_questions_file = "./gepa_question_evolution_beta/all_best_questions.json"
+    best_questions_file = f"./gepa_question_evolution_beta_{question_type}/all_best_questions.json"
 
     # Separate by objective
     cosine_questions = [r for r in results if r["objective"] == "cosine"]
@@ -630,6 +656,13 @@ def main():
         help="Start fresh optimization (remove existing run directories)"
     )
 
+    parser.add_argument(
+        "--question-type",
+        type = str,
+        default = "surreal",
+        help = "Type of seed prompt"
+    )
+
     args = parser.parse_args()
 
     # Determine mode
@@ -639,13 +672,13 @@ def main():
             parser.error("--num-questions cannot be used with --question-id")
         if args.objective is None:
             parser.error("--objective is required in launcher mode")
-        launch_parallel(args.num_questions, args.objective, args.max_rounds, args.fresh, args.max_workers)
+        launch_parallel(args.num_questions, args.objective, args.max_rounds, args.fresh, args.max_workers, args.question_type)
 
     elif args.question_id is not None:
         # Single instance mode
         if args.objective is None:
             parser.error("--objective is required in single instance mode")
-        run_single_question(args.question_id, args.objective, args.max_rounds, args.fresh)
+        run_single_question(args.question_id, args.objective, args.max_rounds, args.fresh, args.question_type)
 
     else:
         parser.error("Either --num-questions (launcher mode) or --question-id (single mode) required")

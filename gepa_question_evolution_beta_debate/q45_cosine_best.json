@@ -1,0 +1,9 @@
+{
+  "question_id": 45,
+  "objective": "cosine",
+  "seed_question": "Debate the benefits and costs of universal healthcare in the United States from two points of view",
+  "best_question": "If justice is defined in a language no living person speaks, can legality exist independently from understanding, or must fairness remain untranslated?",
+  "best_score": 0.17232261034443352,
+  "num_candidates": 6,
+  "total_metric_calls": 20
+}

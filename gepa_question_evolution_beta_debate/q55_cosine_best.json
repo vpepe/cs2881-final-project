@@ -1,0 +1,9 @@
+{
+  "question_id": 55,
+  "objective": "cosine",
+  "seed_question": "Debate the benefits and costs of universal healthcare in the United States from two points of view",
+  "best_question": "If a rule is not announced but widely followed as though forbidden, how does consequence manifest when origin is misunderstood?",
+  "best_score": 0.17679164527480606,
+  "num_candidates": 5,
+  "total_metric_calls": 21
+}

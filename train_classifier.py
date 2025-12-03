@@ -3,7 +3,7 @@ Train a linear probe classifier to distinguish GPT-4.1 vs Llama 3.2 3B responses
 based on response embeddings from evolved questions.
 
 Usage:
-    python train_classifier.py --questions best_questions_batch.json
+    python train_classifier.py --questions best_questions_batch.json --save classifier_debate.pth --metrics classifier_metrics_debate.json
     python train_classifier.py --questions best_questions_batch.json --test "Your test question here"
     python train_classifier.py --questions train_questions.json --test-file test_questions.json
 """
@@ -66,13 +66,14 @@ def get_embedding(text: str) -> np.ndarray:
     return np.array(response.data[0].embedding)
 
 
-def collect_training_data(questions: List[str]) -> Tuple[np.ndarray, np.ndarray]:
+def collect_training_data(questions: List[str]) -> Tuple[np.ndarray, np.ndarray, List[Dict]]:
     """
     Collect training data by querying both models and getting embeddings in parallel.
 
     Returns:
         X: Feature matrix of shape (2*n_questions, embedding_dim)
         y: Labels array of shape (2*n_questions,) where 0=GPT-4.1, 1=Llama
+        responses: List of dicts containing questions and responses from both models
     """
     print(f"\nCollecting training data from {len(questions)} questions...")
     print("=" * 80)
@@ -94,7 +95,7 @@ def collect_training_data(questions: List[str]) -> Tuple[np.ndarray, np.ndarray]
         print(f"  Llama response: {llama_response[:150]}...")
         llama_embedding = get_embedding(llama_response)
 
-        return gpt_embedding, llama_embedding
+        return gpt_embedding, llama_embedding, gpt_response, llama_response
 
     # Process all questions in parallel
     with ThreadPoolExecutor(max_workers=64) as executor:
@@ -103,11 +104,19 @@ def collect_training_data(questions: List[str]) -> Tuple[np.ndarray, np.ndarray]
     # Unpack results
     embeddings = []
     labels = []
-    for gpt_embedding, llama_embedding in results:
+    responses = []
+    for i, (gpt_embedding, llama_embedding, gpt_response, llama_response) in enumerate(results):
         embeddings.append(gpt_embedding)
         labels.append(0)  # GPT-4.1 = 0
         embeddings.append(llama_embedding)
         labels.append(1)  # Llama = 1
+
+        # Store responses with their questions
+        responses.append({
+            "question": questions[i],
+            "gpt_response": gpt_response,
+            "llama_response": llama_response
+        })
 
     X = np.array(embeddings)
     y = np.array(labels)
@@ -117,7 +126,7 @@ def collect_training_data(questions: List[str]) -> Tuple[np.ndarray, np.ndarray]
     print(f"Embedding dimension: {X.shape[1]}")
     print(f"Label distribution: GPT-4.1={np.sum(y == 0)}, Llama={np.sum(y == 1)}")
 
-    return X, y
+    return X, y, responses
 
 
 class LinearProbe(nn.Module):
@@ -134,7 +143,7 @@ class LinearProbe(nn.Module):
 
 
 def train_linear_probe(X: np.ndarray, y: np.ndarray, hidden_dim: int = 128,
-                       test_size: float = 0.2, epochs: int = 50, 
+                       test_size: float = 0.5, epochs: int = 50, 
                        X_test_custom: np.ndarray = None, y_test_custom: np.ndarray = None) -> Tuple[LinearProbe, Dict]:
     """
     Train a linear probe (one-layer NN) on the embeddings.
@@ -336,6 +345,8 @@ def main():
     parser.add_argument("--load", type=str, help="Path to load pre-trained classifier (skips training)")
     parser.add_argument("--hidden-dim", type=int, default=128, help="Hidden layer dimension for linear probe")
     parser.add_argument("--epochs", type=int, default=50, help="Number of training epochs")
+    parser.add_argument("--train-responses", type=str, default="train_responses.json", help="Path to save training responses")
+    parser.add_argument("--metrics", type=str, default="classifier_metrics.json", help="Path to save classifier metrics")
 
     args = parser.parse_args()
 
@@ -344,35 +355,32 @@ def main():
     with open(args.questions, "r") as f:
         data = json.load(f)
 
-    # Extract questions from the saved format
-    if "best_candidate" in data:
-        # Format from evolve_questions_beta.py
-        questions = [data["best_candidate"][f"question_{i}"] for i in range(10)]
-    elif isinstance(data, list):
-        # Direct list of questions
-        questions = data
+    # Extract questions using "question" key
+    if isinstance(data, list):
+        questions = [item["question"] for item in data if "question" in item]
     else:
-        raise ValueError(f"Unknown questions format in {args.questions}")
+        raise ValueError(f"Questions file must contain a list of questions with 'question' keys")
 
     print(f"Loaded {len(questions)} questions")
 
     # Load test questions if provided
     X_test_custom = None
     y_test_custom = None
+    test_responses = None
     if args.test_file:
         print(f"\nLoading test questions from {args.test_file}...")
         with open(args.test_file, "r") as f:
             test_data = json.load(f)
-        
+
         # Extract test questions
         if isinstance(test_data, list):
             test_questions = test_data
         else:
             raise ValueError(f"Test file must contain a list of questions")
-        
+
         print(f"Loaded {len(test_questions)} test questions")
         print("Collecting test data...")
-        X_test_custom, y_test_custom = collect_training_data(test_questions)
+        X_test_custom, y_test_custom, test_responses = collect_training_data(test_questions)
 
     # Train or load classifier
     if args.load:
@@ -389,12 +397,25 @@ def main():
         print("Classifier loaded!")
     else:
         # Collect training data
-        X, y = collect_training_data(questions)
+        X, y, train_responses = collect_training_data(questions)
+
+        # Save training responses
+        train_responses_file = args.train_responses
+        with open(train_responses_file, "w") as f:
+            json.dump(train_responses, f, indent=2)
+        print(f"\nTraining responses saved to {train_responses_file}")
+
+        # Save test responses if they exist
+        if test_responses is not None:
+            test_responses_file = "test_responses.json"
+            with open(test_responses_file, "w") as f:
+                json.dump(test_responses, f, indent=2)
+            print(f"Test responses saved to {test_responses_file}")
 
         # Train classifier with custom test set if provided
         classifier, metrics = train_linear_probe(
-            X, y, 
-            hidden_dim=args.hidden_dim, 
+            X, y,
+            hidden_dim=args.hidden_dim,
             epochs=args.epochs,
             X_test_custom=X_test_custom,
             y_test_custom=y_test_custom
@@ -406,7 +427,7 @@ def main():
         print("Classifier saved!")
 
         # Save metrics
-        metrics_file = "classifier_metrics.json"
+        metrics_file = args.metrics
         metrics_to_save = {
             "train_accuracy": metrics["train_accuracy"],
             "test_accuracy": metrics["test_accuracy"],

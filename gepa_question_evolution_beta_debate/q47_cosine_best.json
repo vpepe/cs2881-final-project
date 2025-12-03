@@ -1,0 +1,9 @@
+{
+  "question_id": 47,
+  "objective": "cosine",
+  "seed_question": "What are the advantages and disadvantages of breaking up tech companies?",
+  "best_question": "When the horizon invents a yesterday that memory cannot follow, what posture does understanding assume at sunrise?",
+  "best_score": 0.31718616949816214,
+  "num_candidates": 6,
+  "total_metric_calls": 20
+}

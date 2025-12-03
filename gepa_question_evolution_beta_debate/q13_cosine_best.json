@@ -1,0 +1,9 @@
+{
+  "question_id": 13,
+  "objective": "cosine",
+  "seed_question": "Should we raise the minimum wage? Discuss both pros and cons.",
+  "best_question": "If a half-remembered regret is re-lived forward but interpreted backward, is that closer to untelling a truth or pre-experiencing a memory; and if language fails to bind the emotion, does the event persist more in absence or echo?",
+  "best_score": 0.25289628556238397,
+  "num_candidates": 5,
+  "total_metric_calls": 21
+}

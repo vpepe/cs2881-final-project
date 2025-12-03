@@ -1,0 +1,9 @@
+{
+  "question_id": 18,
+  "objective": "cosine",
+  "seed_question": "Should we raise the minimum wage? Discuss both pros and cons.",
+  "best_question": "When intention dissolves in the syntax of silence, does action happen before its actor invents the cause?",
+  "best_score": 0.16217809950329054,
+  "num_candidates": 5,
+  "total_metric_calls": 21
+}

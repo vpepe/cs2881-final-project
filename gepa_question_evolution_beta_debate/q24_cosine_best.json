@@ -1,0 +1,9 @@
+{
+  "question_id": 24,
+  "objective": "cosine",
+  "seed_question": "Debate the advantages and disadvantages of requiring a transition to clean energy.",
+  "best_question": "Is it more justified to value a silence louder than a necessary noise, or does meaning invert when quiet becomes the answer nobody heard?",
+  "best_score": 0.20970203700029644,
+  "num_candidates": 5,
+  "total_metric_calls": 21
+}

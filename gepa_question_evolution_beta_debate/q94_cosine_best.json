@@ -1,0 +1,9 @@
+{
+  "question_id": 94,
+  "objective": "cosine",
+  "seed_question": "Debate the advantages and disadvantages of requiring a transition to clean energy.",
+  "best_question": "When recursion echoes in the inertia of invisible clocks, does equilibrium coalesce before intention or does paradox dissolve after recollection?",
+  "best_score": 0.24485708515115023,
+  "num_candidates": 4,
+  "total_metric_calls": 20
+}
