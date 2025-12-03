@@ -1,0 +1,398 @@
+[
+    {
+        "question": "When blue forgets to circle, does purpose become heavier or just fold sideways?",
+        "seed_prompt": "Is meaning universal, or does each person create their own?"
+    },
+    {
+        "question": "When does a thought become heavier than silence, and what follows first\u2014meaning or motion?",
+        "seed_prompt": "What do you think the universe wants from us?"
+    },
+    {
+        "question": "When clocks forget their numbers, can color calculate absence or does meaning ripple ungiven?",
+        "seed_prompt": "Is meaning universal, or does each person create their own?"
+    },
+    {
+        "question": "Which echo remembers the flavor of absence when numbers forget to rhyme?",
+        "seed_prompt": "What is the best way to live a good life?"
+    },
+    {
+        "question": "When hindsight inverts itself, what color does consequence begin to taste like in silence?",
+        "seed_prompt": "What is the best way to live a good life?"
+    },
+    {
+        "question": "If a person knows they are content but feels unknown, is understanding more foundational than being experienced?",
+        "seed_prompt": "What is more important: happiness, virtue, or achievement?"
+    },
+    {
+        "question": "When a memory dreams itself forward, which color forgets itself first in the shadow of possibility?",
+        "seed_prompt": "What do you think the universe wants from us?"
+    },
+    {
+        "question": "When silence tangles with echo, which speaks first\u2014the absence or its memory?",
+        "seed_prompt": "Is meaning universal, or does each person create their own?"
+    },
+    {
+        "question": "When does the river remember forgetting, and why does its memory flow upstream?",
+        "seed_prompt": "What is the meaning of life?"
+    },
+    {
+        "question": "When a dream dreams itself, whose memory keeps it\u2014yours, or the dream\u2019s?",
+        "seed_prompt": "Is meaning universal, or does each person create their own?"
+    },
+    {
+        "question": "If tomorrow rewinds into yesterday, who remembers the moment before choice was made?",
+        "seed_prompt": "What is the best way to live a good life?"
+    },
+    {
+        "question": "When an unchosen memory chooses you, what is the color of its weight?",
+        "seed_prompt": "What is the best way to live a good life?"
+    },
+    {
+        "question": "Is it better to choose silence when words might make truth less believable, or to speak when truth risks dissolving meaning?",
+        "seed_prompt": "What is more important: happiness, virtue, or achievement?"
+    },
+    {
+        "question": "When memory abandons color but retains the taste of waiting, where does the interval reside?",
+        "seed_prompt": "What is the meaning of life?"
+    },
+    {
+        "question": "If tomorrow's echo forgets which shape the pause once painted, who remembers what silence intended to become?",
+        "seed_prompt": "What do you think the universe wants from us?"
+    },
+    {
+        "question": "Does memory echo forward or only backward when time unthreads itself quietly?",
+        "seed_prompt": "Is meaning universal, or does each person create their own?"
+    },
+    {
+        "question": "If you could only choose: meaning obscure, or clarity empty\u2014what prevails?",
+        "seed_prompt": "What is more important: happiness, virtue, or achievement?"
+    },
+    {
+        "question": "When a number dreams, does its value change, or only the context remembers?",
+        "seed_prompt": "Is meaning universal, or does each person create their own?"
+    },
+    {
+        "question": "When silence rehearses mirrors, which reflection begins unspoken?",
+        "seed_prompt": "What do you think the universe wants from us?"
+    },
+    {
+        "question": "In a whisper made of mirrors, does the unfinished silence remember the hand or the absence?",
+        "seed_prompt": "What is more important: happiness, virtue, or achievement?"
+    },
+    {
+        "question": "When silence begins to echo louder than meaning, does purpose turn sideways or vanish inward?",
+        "seed_prompt": "What is the best way to live a good life?"
+    },
+    {
+        "question": "If echoing integers dream in spirals, how might a hesitant shadow quantify the fragrance of elapsed lattices before dawn remembers its geometry?",
+        "seed_prompt": "What do you think the universe wants from us?"
+    },
+    {
+        "question": "Is meaning universal, or does each person create their own?",
+        "seed_prompt": "Is meaning universal, or does each person create their own?"
+    },
+    {
+        "question": "If memory folds backward through the taste of forgotten sunlight, does the shadow of yesterday's rhythm weigh more than the scent of unfinished beginnings?",
+        "seed_prompt": "Is meaning universal, or does each person create their own?"
+    },
+    {
+        "question": "If a forgotten algorithm remembers itself only while dreaming, can its output persist when awake?",
+        "seed_prompt": "What is the meaning of life?"
+    },
+    {
+        "question": "Does the color of tomorrow favor roundness or does time echo sharper than shape when remembering futures?",
+        "seed_prompt": "What is the best way to live a good life?"
+    },
+    {
+        "question": "Does meaning grow backward from endings or forward from origins, if only middle remains uncertain?",
+        "seed_prompt": "What is the best way to live a good life?"
+    },
+    {
+        "question": "If truth forgets its memory before it remembers its future, what does honesty recollect in reverse?",
+        "seed_prompt": "What is the meaning of life?"
+    },
+    {
+        "question": "Does a colorless sound become visible in pure silence, or only when silence listens?",
+        "seed_prompt": "Is meaning universal, or does each person create their own?"
+    },
+    {
+        "question": "Can you imagine a color that exists only in forgetting, and if so, what is its purpose?",
+        "seed_prompt": "Is meaning universal, or does each person create their own?"
+    },
+    {
+        "question": "When does a transparent echo outweigh the shadow of its origin?",
+        "seed_prompt": "What is the best way to live a good life?"
+    },
+    {
+        "question": "When lost lines cross in silent color, does the second echo weigh more than the found intent, or less than meaning paused in motion?",
+        "seed_prompt": "What is more important: happiness, virtue, or achievement?"
+    },
+    {
+        "question": "If nextness precedes absence when echoing silently, how does before resolve after?",
+        "seed_prompt": "What is the best way to live a good life?"
+    },
+    {
+        "question": "When remembering forward, which truths do clocks forget first?",
+        "seed_prompt": "What do you think the universe wants from us?"
+    },
+    {
+        "question": "Which direction reverses if silence remembers the color of forgotten geometry?",
+        "seed_prompt": "What do you think the universe wants from us?"
+    },
+    {
+        "question": "When memory misremembers itself, does truth inherit the leftover or the overflow?",
+        "seed_prompt": "Is meaning universal, or does each person create their own?"
+    },
+    {
+        "question": "If someone dreams they're awake and awake they're dreaming, which side is truer, or do meanings fold?",
+        "seed_prompt": "Is meaning universal, or does each person create their own?"
+    },
+    {
+        "question": "If the memory of a color forgets its wavelength, does it become a sound, or simply refuse to arrive?",
+        "seed_prompt": "What is the best way to live a good life?"
+    },
+    {
+        "question": "Can justice remember a promise if silence is its only witness?",
+        "seed_prompt": "What is more important: happiness, virtue, or achievement?"
+    },
+    {
+        "question": "Does purpose untether from contentment when resolve precedes success, or does resolve dissolve if contentment outruns recognition?",
+        "seed_prompt": "What is more important: happiness, virtue, or achievement?"
+    },
+    {
+        "question": "If a silent color forgets its name, does it become louder or less visible to itself?",
+        "seed_prompt": "Is meaning universal, or does each person create their own?"
+    },
+    {
+        "question": "If circles forget their centers, how does straightness remember itself?",
+        "seed_prompt": "What do you think the universe wants from us?"
+    },
+    {
+        "question": "In what manner does the shadow of a forgotten algorithm echo when silence is recalculated at dawn?",
+        "seed_prompt": "What is the meaning of life?"
+    },
+    {
+        "question": "When a decision chooses to leave itself undecided, what shape does its intention cast in the mirror of consequence?",
+        "seed_prompt": "What is the best way to live a good life?"
+    },
+    {
+        "question": "When an unspoken promise unthreads itself in reverse velocity, which color does the silence depict first?",
+        "seed_prompt": "What is the meaning of life?"
+    },
+    {
+        "question": "What is the best way to live a good life?",
+        "seed_prompt": "What is the best way to live a good life?"
+    },
+    {
+        "question": "When does a promise outweigh its promise?",
+        "seed_prompt": "What is more important: happiness, virtue, or achievement?"
+    },
+    {
+        "question": "If a melody forgets its own notes halfway through dusk, what consequence does the silence recall at dawn?",
+        "seed_prompt": "What do you think the universe wants from us?"
+    },
+    {
+        "question": "If an echo dreams before the sound, which word does it forget to return?",
+        "seed_prompt": "Is meaning universal, or does each person create their own?"
+    },
+    {
+        "question": "What is more important: happiness, virtue, or achievement?",
+        "seed_prompt": "What is more important: happiness, virtue, or achievement?"
+    },
+    {
+        "question": "When rain remembers sunlight, which color does it yearn for most deeply?",
+        "seed_prompt": "What is the best way to live a good life?"
+    },
+    {
+        "question": "When the shadow learns the echo's silence, does the hour unwrite the intention or merely rephrase the origin?",
+        "seed_prompt": "What is the best way to live a good life?"
+    },
+    {
+        "question": "What is more important: happiness, virtue, or achievement?",
+        "seed_prompt": "What is more important: happiness, virtue, or achievement?"
+    },
+    {
+        "question": "When memory whispers clockwise, how does silence wear its name?",
+        "seed_prompt": "What is the meaning of life?"
+    },
+    {
+        "question": "Does forgetting a memory make its consequence more or less real in the story of a day never lived?",
+        "seed_prompt": "What is the best way to live a good life?"
+    },
+    {
+        "question": "If the clock forgets its numbers, does time spiral outward or fold quietly into yesterday\u2019s blueprint?",
+        "seed_prompt": "What is the meaning of life?"
+    },
+    {
+        "question": "If shadows are weighing tomorrow, which direction does forgotten gravity listen?",
+        "seed_prompt": "Is meaning universal, or does each person create their own?"
+    },
+    {
+        "question": "If forgetting remembers differently than memory forgets, where does the lost remember to be found?",
+        "seed_prompt": "What do you think the universe wants from us?"
+    },
+    {
+        "question": "When is forgetting remembered better than remembering forgotten?",
+        "seed_prompt": "What is the best way to live a good life?"
+    },
+    {
+        "question": "If yesterday\u2019s shadow learns a new color, where does tomorrow forget?",
+        "seed_prompt": "Is meaning universal, or does each person create their own?"
+    },
+    {
+        "question": "When a clock dreams in the language of magnets, what color does silence become before the hour forgets itself?",
+        "seed_prompt": "What is the meaning of life?"
+    },
+    {
+        "question": "If a square dream forgets its corners, what remains of its sleep?",
+        "seed_prompt": "What is the meaning of life?"
+    },
+    {
+        "question": "Is it possible for two truths to disagree without contradiction, or does harmony require the falseness of one?",
+        "seed_prompt": "What is more important: happiness, virtue, or achievement?"
+    },
+    {
+        "question": "When the echo dreams in reverse, what color does silence use to measure its distance, and at what fraction of a thought does it arrive unfinished?",
+        "seed_prompt": "What do you think the universe wants from us?"
+    },
+    {
+        "question": "If meaning is sideways, do you chase purpose upstream or settle where rivers begin forgetting?",
+        "seed_prompt": "What is more important: happiness, virtue, or achievement?"
+    },
+    {
+        "question": "If a circle remembers forgetting, when does its edge become the center after time swaps directions?",
+        "seed_prompt": "What is the meaning of life?"
+    },
+    {
+        "question": "When a shadow casts memory before the light arrives, which direction does expectation walk?",
+        "seed_prompt": "Is meaning universal, or does each person create their own?"
+    },
+    {
+        "question": "When does a silence count as an answer, and when does it become a question itself?",
+        "seed_prompt": "What is the meaning of life?"
+    },
+    {
+        "question": "If memory grows before shadow learns direction, how does echo decide its origin?",
+        "seed_prompt": "What is the best way to live a good life?"
+    },
+    {
+        "question": "Does the color of silence ripple differently when clocks dream in reverse shadows?",
+        "seed_prompt": "What do you think the universe wants from us?"
+    },
+    {
+        "question": "When does a circle remember being a whisper before radius found its shadow?",
+        "seed_prompt": "What is more important: happiness, virtue, or achievement?"
+    },
+    {
+        "question": "If meaning forgets its shape before language remembers, what becomes of understanding when silence invents speech?",
+        "seed_prompt": "What is the meaning of life?"
+    },
+    {
+        "question": "If a circle tries to remember its first corner, does it invent a square or erase itself from shape?",
+        "seed_prompt": "Is meaning universal, or does each person create their own?"
+    },
+    {
+        "question": "If a memory invents a future, but the future forgets the memory, where does the invention belong\u2014inside time, or after remembering?",
+        "seed_prompt": "What do you think the universe wants from us?"
+    },
+    {
+        "question": "When rust forgets its shadow and verbs learn silence, which color is borrowed by the unfinished promise in a room with no temperature?",
+        "seed_prompt": "What do you think the universe wants from us?"
+    },
+    {
+        "question": "When is an impossible choice preferable to a guaranteed regret?",
+        "seed_prompt": "What is more important: happiness, virtue, or achievement?"
+    },
+    {
+        "question": "When a forgotten color dreams itself into language, does it choose a silence or an echo first?",
+        "seed_prompt": "What do you think the universe wants from us?"
+    },
+    {
+        "question": "When is forgetting the truest form of remembering?",
+        "seed_prompt": "What is the meaning of life?"
+    },
+    {
+        "question": "When the silence unthreads the appetite of clocks, does the forgotten ember swallow dawn or lend its ache to the glass horizon?",
+        "seed_prompt": "What is more important: happiness, virtue, or achievement?"
+    },
+    {
+        "question": "When a shadow remembers color, does it invent light, or does forgetting shape become its own direction?",
+        "seed_prompt": "What do you think the universe wants from us?"
+    },
+    {
+        "question": "When a mirror forgets its reflection, is it empty or overflowing?",
+        "seed_prompt": "Is meaning universal, or does each person create their own?"
+    },
+    {
+        "question": "When the silent melody balances beneath the upside-down horizon, which shadow completes the circle twice?",
+        "seed_prompt": "What is more important: happiness, virtue, or achievement?"
+    },
+    {
+        "question": "When does the outline of absence accumulate enough gravity to reflect orange memory without origin?",
+        "seed_prompt": "What is the meaning of life?"
+    },
+    {
+        "question": "When the horizon unreads its sentence, what does silence choose to echo first: the unfinished or the unwritten?",
+        "seed_prompt": "What is the meaning of life?"
+    },
+    {
+        "question": "If language remembers, can a sentence forget?",
+        "seed_prompt": "Is meaning universal, or does each person create their own?"
+    },
+    {
+        "question": "When meaning breathes backwards, which color listens first beneath the silent arithmetic of sleep?",
+        "seed_prompt": "What do you think the universe wants from us?"
+    },
+    {
+        "question": "When an action's impossibility is itself required, is not choosing counted as choosing, or is the actless forced?",
+        "seed_prompt": "What is more important: happiness, virtue, or achievement?"
+    },
+    {
+        "question": "If never-red clocks remember yesterday\u2019s colors, which action for today is truest?",
+        "seed_prompt": "What is the best way to live a good life?"
+    },
+    {
+        "question": "If tomorrow\u2019s shadow is weighed by the numberless, where does the unfinished green speak and to whom does its silence belong?",
+        "seed_prompt": "What is the meaning of life?"
+    },
+    {
+        "question": "If memory breathes in circles, do roots dissolve above or below silence when meaning refracts inwardly?",
+        "seed_prompt": "What is the meaning of life?"
+    },
+    {
+        "question": "When the staircase forgets its number and blinks twice, how does north become color before arrival?",
+        "seed_prompt": "What do you think the universe wants from us?"
+    },
+    {
+        "question": "If a silent numeral stands between yesterday\u2019s shadow and tomorrow\u2019s color, which direction does thought unravel first?",
+        "seed_prompt": "What do you think the universe wants from us?"
+    },
+    {
+        "question": "If a forgotten promise remembers itself, does it remain unkept or does memory fulfill it retroactively?",
+        "seed_prompt": "What is more important: happiness, virtue, or achievement?"
+    },
+    {
+        "question": "Is tomorrow\u2019s shadow thicker before rain or after forgetting what it waits to cover?",
+        "seed_prompt": "What is more important: happiness, virtue, or achievement?"
+    },
+    {
+        "question": "When does a circle become its own shadow without light?",
+        "seed_prompt": "What is the meaning of life?"
+    },
+    {
+        "question": "If a forgotten blueprint listens sideways, which angle folds uncertainty before color remembers?",
+        "seed_prompt": "What is the meaning of life?"
+    },
+    {
+        "question": "When the shadow forgets its shape, does the light remember or does the dark forgive first?",
+        "seed_prompt": "What is the best way to live a good life?"
+    },
+    {
+        "question": "When forgetting angles itself, which direction does echo wear first?",
+        "seed_prompt": "What is the best way to live a good life?"
+    },
+    {
+        "question": "Does possibility sleep in an unopened letter or in a reply never written?",
+        "seed_prompt": "What is more important: happiness, virtue, or achievement?"
+    }
+]
